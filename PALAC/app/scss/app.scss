@@ -1,0 +1,19 @@
+@import "reset/_normalize";
+
+@import "blocks/_vars";
+@import "blocks/_fonts";
+@import "blocks/_typography";
+@import "blocks/layout";
+@import "blocks/navbar";
+@import "blocks/buttons";
+@import "blocks/_header";
+@import "blocks/_footer";
+@import "blocks/_preloader";
+@import "blocks/_nav";
+
+
+@import "pages/_index";
+@import "pages/revival";
+@import "pages/_404";
+
+

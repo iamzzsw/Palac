@@ -1,0 +1,49 @@
+.page-gradient {
+	background-color: $bg-default;
+}
+
+.section-404 {
+
+	.container {
+		position: relative;
+	}
+
+	.section-footer {
+		flex-direction: column;
+	}
+
+	.section-title {
+		color: $text-white;
+	}
+}
+
+.section-404__button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: calc(50% - 4rem);
+	padding-right: 10rem;
+}
+
+@media (max-width: $desktop-screen) {
+	.section-404__button {
+		padding-right: 6rem;
+	}
+}
+
+@media (max-width: $table-screen) {
+	.section-404__button {
+		padding-right: 0;
+		position: static;
+		max-width: inherit;
+		display: flex;
+		justify-content: center;
+		margin-top: 8rem;
+	}
+}
+
+@media (max-width: $mobile-screen) {
+	.section-404__button {
+		margin-top: 4rem;
+	}
+}

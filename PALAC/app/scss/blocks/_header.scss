@@ -1,0 +1,50 @@
+.layout-header {
+  width: 100%;
+  display: flex;
+  height: 12rem;
+  align-items: center;
+  .container {
+    display: flex;
+    max-width: 134.4rem;
+    justify-content: center;
+    margin: auto;
+  }
+
+}
+
+.logo {
+  font-family: $font-primary;
+  font-size: 2.8rem;
+  text-align: center;
+  letter-spacing: 0.56rem;
+  justify-self: center;
+}
+
+.svg-store {
+  display: none;
+}
+
+.layout-header__right{
+  font-size: 1.6rem;
+  position: absolute;
+  right: 4.8rem;
+  top: 3.3rem;
+  display: flex;
+  align-items: center;
+  height: 4.8rem;
+  .icon-separator {
+    width: .6rem;
+    width: .6rem;
+    padding: 0 1rem;
+  }
+  .active {
+    color: rgba($text-white, 0.5);
+  }
+   a{
+    color: $text-white;
+    text-decoration: none;
+    font-family: $font-default;
+
+   }
+
+}

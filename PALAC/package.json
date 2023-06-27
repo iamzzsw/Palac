@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "pug": "^3.0.2",
+    "sass": "^1.63.6"
+  },
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-html-prettify": "^0.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-plumber-error-handler": "^1.0.0",
+    "gulp-watch": "^5.0.1"
+  }
+}

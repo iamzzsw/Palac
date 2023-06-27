@@ -1,0 +1,35 @@
+.navbar_container {
+    max-width: 134.4rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: auto;
+    margin-top: 7rem;
+    .list {
+        text-transform: uppercase;
+        list-style-type: none;
+        font-family: $font-default;
+        font-weight: 500;
+        letter-spacing: 0.09rem;
+        display: flex;
+        .list-item {
+            color: $text-white;
+            transition: all .3s;
+            .hr {
+                height: 0.1rem;
+                width: 4rem;
+                background-color: $but-help;
+                margin: 0.5rem auto;
+
+            }
+            &:hover {
+                color: $text-hover;
+            }
+        }
+        .icon-separator {
+            width: .6rem;
+            height: .6rem;
+            padding: 0.6rem 3.7rem;
+        }
+    }
+}

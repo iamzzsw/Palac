@@ -1,0 +1,169 @@
+.layout-footer {
+    background-color: $bg-default;
+    padding-top: 4rem;
+}
+
+.layout-footer__base {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+
+.layout-footer__row {
+    margin-left: -3rem;
+    margin-right: -3rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 134.4rem;
+    margin: auto;
+    font-size: 1.6rem;
+    font-family: $font-default;
+}
+
+.layout-footer__cell {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.copyright {
+    color: $text-black;
+}
+
+.developer {
+    color: $text-black;
+    display: flex;
+    white-space: nowrap;
+    a {
+        text-decoration: none;
+        color: $text-black;
+    }
+
+    .icon-pras {
+        width: 8.5rem;
+        height: 2rem;
+        display: block;
+        margin-right: 1.6rem;
+        transition: fill .3s;
+        fill: $bg-black;
+    }
+}
+
+
+
+@media (max-width: $desktop-screen) {
+    .list-payments {
+        align-items: center;
+    }
+
+    .list-payments__item {
+        width: 20%;
+    }
+}
+
+
+@media (max-width: $table-screen) {
+
+    .layout-footer {
+        .js_slider-primary {
+            &:after {
+				content: 'flickity';
+    		    display: none;
+			}
+        }
+    }
+
+    .list-payments {
+        flex-wrap: nowrap;
+        margin: 0 -4rem;
+    }
+
+    .list-payments__item {
+        margin-bottom: 0;
+        width: auto;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .list-payments__logo {
+        max-width: inherit;
+    }
+
+    .layout-footer__info {
+      &::after {
+        display: none;
+      }
+
+        .layout-footer__row {
+            flex-direction: column-reverse;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .layout-footer__cell {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+
+            +  .layout-footer__cell {
+                &:after{
+                    content:'';
+                    height: 4px;
+                    background-color: #fff;
+                    display: block;
+                    margin: 2rem 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-screen) {
+
+    .layout-footer {
+        padding-bottom: 4rem;
+    }
+
+    .layout-footer__base,
+    .layout-footer__info {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .layout-footer__base {
+        .layout-footer__row {
+            flex-direction: column;
+        }
+
+        .layout-footer__cell {
+            text-align: center;
+
+            + .layout-footer__cell {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    .list-payments {
+        margin: 0 -1.5rem;
+    }
+
+    .list-payments__item {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .layout-footer__text {
+        font-size: 1.4rem;
+    }
+
+    .developer {
+        font-size: 1.2rem;
+        justify-content: center;
+
+        .icon-pras {
+            width: 5.4rem;
+            height: 1.2rem;
+            margin-right: .6rem;
+        }
+    }
+}

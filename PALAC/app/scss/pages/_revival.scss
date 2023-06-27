@@ -1,0 +1,25 @@
+.container_revival {
+    margin: 12rem;
+    font-family: $font-default;
+    .about {
+        max-width: 72rem;
+        margin: 6rem auto 4.72rem;
+        p {
+            margin: 0;
+            font-size: 2rem;
+            color: $text-black;
+            line-height: 160%;
+        }
+    }
+    .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        span {
+            font-size: 1.6rem;
+            color: rgba($text-black, 0.5);
+            padding: 1.16rem 0 0 1.2rem;           
+        }
+    }
+}

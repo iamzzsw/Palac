@@ -1,0 +1,35 @@
+.nav-list {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+  position: sticky;
+  top: 10rem;
+}
+
+.nav-list__link {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #000000;
+  padding-bottom: 5rem;
+
+  &.active {
+    color: rgba(0, 0, 0, .5);
+  }
+}
+
+.nav-list__item {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+
+  &:first-child {
+    padding-top: 1rem;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
