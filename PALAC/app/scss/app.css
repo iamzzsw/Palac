@@ -333,12 +333,15 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 4.8rem;
-  line-height: 1;
-  font-weight: 700;
+  font-size: 6.4rem;
+  font-weight: 400;
   font-family: "Oranienbaum", serif;
   color: #000;
-  margin-bottom: 4rem;
+  margin: 8rem 0 4rem;
+  text-align: center;
+  line-height: 150%;
+  letter-spacing: 0.576rem;
+  text-transform: uppercase;
 }
 
 h3, .h3 {
@@ -350,10 +353,10 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 2.8rem;
-  line-height: 1;
+  font-size: 2.4rem;
+  line-height: 160%;
   font-weight: 700;
-  font-family: "Oranienbaum", serif;
+  font-family: "Raleway", sans-serif;
   color: #000;
 }
 
@@ -724,6 +727,52 @@ h5, .h5 {
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.5);
   padding: 1.16rem 0 0 1.2rem;
+}
+.container_revival .team {
+  max-width: 72rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #000;
+  line-height: 160%;
+}
+.container_revival .team p {
+  margin: 0;
+}
+.container_revival .team .participants {
+  margin: 4.8rem 0;
+}
+.container_revival .team .participants_item {
+  display: flex;
+}
+.container_revival .team .participants_item .img {
+  width: 50%;
+}
+.container_revival .team .participants_item .info {
+  padding: 1.2rem 0 0 4rem;
+}
+.container_revival .team .participants_item .info .decription {
+  font-size: 1.6rem;
+  opacity: 0.5;
+  line-height: 160%;
+  margin-top: 2rem;
+}
+.container_revival .team .participants_item .info .qoute {
+  display: flex;
+}
+.container_revival .team .participants_item .info .qoute .commas {
+  width: 2.4rem;
+  display: flex;
+}
+.container_revival .team .participants_item .info .qoute .commas .icon {
+  width: 1.1rem;
+}
+.container_revival .team .participants_item .info .qoute blockquote {
+  font-size: 2rem;
+  color: #000;
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+  margin: 0;
+  margin-top: 2rem;
 }
 
 .page-gradient {

@@ -21,12 +21,15 @@ h1,.h1 {
 }
 
 h2,.h2 {
-	font-size: 4.8rem;
-	line-height: 1;
-	font-weight: 700;
+	font-size: 6.4rem;
+	font-weight: 400;
 	font-family: $font-primary;
 	color: $text-black;
-	margin-bottom: 4rem;
+	margin: 8rem 0 4rem;
+	text-align: center;
+	line-height: 150%;
+	letter-spacing: 0.576rem;
+	text-transform: uppercase;
 }
 
 h3,.h3 {
@@ -38,10 +41,10 @@ h3,.h3 {
 }
 
 h4,.h4 {
-	font-size: 2.8rem;
-	line-height: 1;
+	font-size: 2.4rem;
+	line-height: 160%;
 	font-weight: 700;
-	font-family: $font-primary;
+	font-family: $font-default;
 	color: $text-black;
 }
 

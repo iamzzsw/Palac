@@ -22,4 +22,50 @@
             padding: 1.16rem 0 0 1.2rem;           
         }
     }
+    .team {
+        max-width: 72rem;
+        margin: 0 auto;
+        font-size: 2rem;
+        color: $text-black;
+        line-height: 160%;
+        p {
+            margin: 0;
+        }
+        .participants {
+            margin: 4.8rem 0;
+            &_item {
+                display: flex;
+                .img {
+                    width: 50%;
+                }
+                .info {
+                    padding: 1.2rem 0 0 4rem;
+                    .decription {
+                        font-size: 1.6rem;
+                        opacity: 0.5;
+                        line-height: 160%;
+                        margin-top: 2rem;
+                    }
+                    .qoute {
+                        display: flex;
+                        .commas {
+                            width: 2.4rem;
+                            display: flex;
+                            .icon {
+                                width: 1.1rem;
+                            }
+                        }
+                        blockquote {
+                            font-size: 2rem;
+                            color: $text-black;
+                            font-family: $font-quote;
+                            font-style: italic;
+                            margin: 0;
+                            margin-top: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
