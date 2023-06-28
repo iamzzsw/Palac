@@ -4,14 +4,22 @@
 	height: 147rem;
 }
 
-.section-404 {
-
-	.container {
-		position: relative;
-	}
-
-	.section-footer {
-		flex-direction: column;
+.page-gradient-help {
+	background: linear-gradient($bg-default 0%, $bg-light 50%),$bg-light;
+	background-repeat: no-repeat;
+}
+.container.help {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+    margin-top: 8.2rem;
+	p {
+		color: #000;
+		font-size: 2rem;
+		font-family: Raleway;
+		line-height: 160%;
+		margin-top: 6rem;
 	}
 
 	.section-title {

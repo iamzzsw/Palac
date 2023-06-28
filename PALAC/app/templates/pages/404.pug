@@ -1,9 +1,19 @@
 extends ../layout/layout-default
 
 block vars
-  - var bodyClass = 'page-gradient';
+  - var bodyClass = 'page-gradient-help';
 
 block head
   - var pageTitle = 'ГОРВАРТС';
 
 block content
+    .section.section-welcome
+    .container.help
+      h1 ДАПАМОГА
+      p  Палацава-паркаваму комплексу Горватаў патрэбна ваша дапамога. <br>
+        | Вы можаце дапамагчы грашыма або валанцёрскай працай. <br>
+        | Наша каманда будзе рада любой дапамогі.
+    include ../blocks/donate  
+    include ../blocks/recover
+
+
