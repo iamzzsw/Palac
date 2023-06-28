@@ -1,0 +1,27 @@
+.container {
+    p {
+        max-width: 72rem;
+        margin: auto;
+        font-family: $font-default;
+        font-size: 2rem;
+        color: $text-black;
+        line-height: 160%;
+        padding: 1rem;
+        &.hashtags {
+            text-align: center;
+            color: $text-black;
+            margin: auto;
+            font-size: 1.6rem;
+            font-family: $font-default;
+            line-height: 150%;
+            letter-spacing: 0.032rem;
+   
+        }
+    }
+    .images {
+        width: 100%;
+        img {
+            width: 25%;
+        }
+    }
+}
