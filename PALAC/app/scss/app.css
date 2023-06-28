@@ -704,79 +704,109 @@ h5, .h5 {
 }
 
 .container_revival {
-  margin: 12rem;
+  margin: 12rem auto;
   font-family: "Raleway", sans-serif;
-}
-.container_revival .about {
   max-width: 72rem;
-  margin: 6rem auto 4.72rem;
 }
-.container_revival .about p {
+.container_revival h1 {
+  margin-bottom: 6rem;
+}
+.container_revival p {
   margin: 0;
   font-size: 2rem;
   color: #000;
   line-height: 160%;
+  padding: 1rem;
 }
-.container_revival .img {
-  width: 100%;
+.container_revival .double {
+  width: 116rem;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
+  margin: 4.72rem 0 0 -22rem;
 }
-.container_revival .img span {
+.container_revival .double figure {
+  margin: 0;
+}
+.container_revival blockquote {
+  font-size: 2.4rem;
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+  margin: 4.8rem 0;
+  padding-left: 3.4rem;
+  position: relative;
+}
+.container_revival blockquote::before {
+  content: url("../resources/commos.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container_revival figure {
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  margin: 4.72rem 0 0 -22rem;
+  padding: 0 1rem;
+}
+.container_revival figure img {
+  max-height: inherit;
+  width: auto;
+}
+.container_revival figure figcaption {
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.5);
-  padding: 1.16rem 0 0 1.2rem;
+  padding: 1.16rem 0 4.8rem 1.2rem;
 }
-.container_revival .team {
-  max-width: 72rem;
-  margin: 0 auto;
-  font-size: 2rem;
-  color: #000;
-  line-height: 160%;
-}
-.container_revival .team p {
-  margin: 0;
-}
-.container_revival .team .participants {
+.container_revival .participants {
   margin: 4.8rem 0;
 }
-.container_revival .team .participants_item {
+.container_revival .participants .participants_item {
   display: flex;
 }
-.container_revival .team .participants_item .img {
+.container_revival .participants .participants_item figure {
   width: 50%;
+  max-width: 50%;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
-.container_revival .team .participants_item .info {
+.container_revival .participants .participants_item figure img {
+  width: 100%;
+}
+.container_revival .participants .participants_item .info {
+  width: 50%;
   padding: 1.2rem 0 0 4rem;
 }
-.container_revival .team .participants_item .info .decription {
+.container_revival .participants .participants_item .info p {
+  padding: 0;
   font-size: 1.6rem;
   opacity: 0.5;
   line-height: 160%;
   margin-top: 2rem;
 }
-.container_revival .team .participants_item .info .qoute {
-  display: flex;
-}
-.container_revival .team .participants_item .info .qoute .commas {
-  width: 2.4rem;
-  display: flex;
-}
-.container_revival .team .participants_item .info .qoute .commas .icon {
-  width: 1.1rem;
-}
-.container_revival .team .participants_item .info .qoute blockquote {
+.container_revival .participants .participants_item .info blockquote {
   font-size: 2rem;
   color: #000;
   font-family: "Noto Serif", serif;
   font-style: italic;
   margin: 0;
-  margin-top: 2rem;
+  padding-left: 3.4rem;
+  position: relative;
+}
+.container_revival .participants .participants_item .info blockquote p {
+  opacity: 1;
+}
+.container_revival .participants .participants_item .info blockquote::before {
+  content: url("../resources/commos.png");
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .page-gradient {
-  background-color: #93A480;
+  background: linear-gradient(180deg, #93A480 0%, #F8F7F3 100%), #F8F7F3;
+  background-repeat: no-repeat;
+  height: 147rem;
 }
 
 .section-404 .container {
