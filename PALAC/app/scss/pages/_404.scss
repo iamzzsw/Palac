@@ -1,5 +1,7 @@
 .page-gradient {
-	background-color: $bg-default;
+	background: linear-gradient(180deg, $bg-default 0%, $bg-light 100%),$bg-light;
+	background-repeat: no-repeat;
+	height: 147rem;
 }
 
 .page-gradient-help {
