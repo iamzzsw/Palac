@@ -5,7 +5,8 @@
 }
 
 .page-gradient-help {
-	background: linear-gradient(#93A480, #F8F7F3);
+	background: linear-gradient($bg-default 0%, $bg-light 50%),$bg-light;
+	background-repeat: no-repeat;
 }
 .container.help {
 	display: flex;

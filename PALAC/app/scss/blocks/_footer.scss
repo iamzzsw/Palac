@@ -1,6 +1,5 @@
 .layout-footer {
     background-color: $bg-default;
-    padding-top: 4rem;
 }
 
 .layout-footer__base {
@@ -23,6 +22,11 @@
 .layout-footer__cell {
     padding-left: 3rem;
     padding-right: 3rem;
+
+    p {
+        margin:0;
+        padding: 0;
+    }
 }
 
 .copyright {

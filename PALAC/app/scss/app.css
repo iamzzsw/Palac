@@ -511,7 +511,6 @@ h5, .h5 {
 
 .layout-footer {
   background-color: #93A480;
-  padding-top: 4rem;
 }
 
 .layout-footer__base {
@@ -533,6 +532,10 @@ h5, .h5 {
 .layout-footer__cell {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+.layout-footer__cell p {
+  margin: 0;
+  padding: 0;
 }
 
 .copyright {
@@ -707,6 +710,7 @@ h5, .h5 {
   display: flex;
   justify-content: center;
   margin-top: 8rem;
+  padding-bottom: 17.6rem;
 }
 
 input[type=text],
@@ -830,6 +834,78 @@ input[type=submit]:hover {
   width: 17.2rem;
 }
 
+.recover-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 85.3rem;
+}
+.recover-container .recover {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 15rem;
+  font-family: "Oranienbaum", serif;
+  line-height: 17rem;
+  letter-spacing: 1.5rem;
+  text-transform: uppercase;
+  padding-top: 37.1rem;
+  margin: 0;
+}
+.recover-container .nav-end {
+  display: flex;
+  margin-top: 9.8rem;
+  padding-bottom: 3.2rem;
+}
+
+.socials-container {
+  display: flex;
+}
+.socials-container a {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  cursor: pointer;
+  width: 15rem;
+  height: 4.8rem;
+  border-radius: 80px;
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+.socials-container a:hover {
+  border: 1px solid rgba(106, 108, 100, 0.2);
+  background: rgba(106, 108, 100, 0.4);
+}
+.socials-container .social-block {
+  position: relative;
+}
+.socials-container .block-inst {
+  margin-right: 2rem;
+}
+.socials-container .inst-shadow {
+  background: rgba(90, 44, 72, 0.7);
+}
+.socials-container .facebook-shadow {
+  background: #516783;
+}
+.socials-container .inst {
+  border: 1px solid rgba(203, 1, 122, 0.2);
+  background: rgba(203, 1, 122, 0.5);
+}
+.socials-container .facebook {
+  border: 1px solid rgba(24, 119, 242, 0.2);
+  background: rgba(24, 119, 242, 0.5);
+}
+
 .container_revival {
   margin: 12rem auto;
   font-family: "Raleway", sans-serif;
@@ -937,7 +1013,8 @@ input[type=submit]:hover {
 }
 
 .page-gradient-help {
-  background: linear-gradient(#93A480, #F8F7F3);
+  background: linear-gradient(#93A480 0%, #F8F7F3 50%), #F8F7F3;
+  background-repeat: no-repeat;
 }
 
 .container.help {
