@@ -1,0 +1,138 @@
+.donate-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+input[type="text"],
+input[type="tel"] {
+    border: none;
+    border-bottom: 0.1rem solid #fff;
+    width: 32.6rem;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    color: $text-white;
+    font-size: 2.4rem;
+    font-family: Raleway;
+    line-height: 160%;
+}
+
+input[type="submit"] {
+    border-radius: 80px;
+    backdrop-filter: blur(2.5px);
+    font-size: 1.8rem;
+    font-family: $font-default;
+    line-height: 2.8rem;
+    color: $text-white;
+    font-weight: 600;
+    letter-spacing: 0.036rem;
+    padding: 1rem;
+    transition: all .4s;
+
+    &:hover {
+        border: 1px solid rgba($text-hover, 0.20);
+        background: rgba($text-hover, 0.40);
+    }
+}
+
+.help-money {
+    margin-right: 8.1rem;
+
+    .form-block-help {
+        width: 54rem;
+        height: 32.8rem;
+        border-radius: 20px;
+        background: #93A480;
+        margin-top: 2.4rem;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+            color: $text-white;
+            text-align: right;
+            font-size: 2rem;
+            font-family: Raleway;
+            line-height: 160%;
+            margin-left: 1.2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                color: $text-black;
+                font-size: 1.6rem;
+                font-family: Raleway;
+                line-height: 160%;
+                opacity: 0.5;
+            }
+
+            input[type="submit"] {
+                border: 1px solid rgba($but-help, 0.20);
+                background: rgba($but-help, 0.40);
+                width: 15rem;
+                height: 4.8rem;
+            }
+
+            .block-shadow-help {
+                position: relative;
+                margin-top: 4.1rem;
+                align-self: flex-end;
+            }
+
+            .shadow-help-money {
+                background: #7B8A6A;
+            }
+        }
+    }
+}
+
+.help-work {
+    .form-block-work {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin-top: 2.4rem;
+        form {
+            display: flex;
+            flex-direction: column;
+            input[type="text"],
+            input[type="tel"] {
+                margin-top: 5rem;
+                border-bottom: 0.1rem solid #000;
+            }
+            input[placeholder] {
+                color: $text-black;
+                font-size: 1.6rem;
+                font-family: Raleway;
+                line-height: 160%;
+                opacity: 0.5;
+                padding-bottom: 0.2rem;
+            }
+            
+            input[type="submit"] {
+                width: 19.2rem;
+                height: 4.8rem;
+                border: 1px solid $but-help;
+                background: rgba($but-help, 0.80);
+            }
+
+            .block-shadow-work {
+                position: relative;
+                margin-top: 3.8rem;
+                align-self: flex-end;
+            }
+
+            .shadow-help-work {
+                background: rgba(175, 146, 58, 0.80);
+                width: 17.2rem;
+            }
+        }
+    }
+}
