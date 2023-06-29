@@ -9,15 +9,13 @@
     justify-content: center;
     margin: auto;
   }
-
-}
-
-.logo {
-  font-family: $font-primary;
-  font-size: 2.8rem;
-  text-align: center;
-  letter-spacing: 0.56rem;
-  justify-self: center;
+  .logo {
+    font-family: $font-primary;
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: 0.56rem;
+    justify-self: center;
+  }
 }
 
 .svg-store {
