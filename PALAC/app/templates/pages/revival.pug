@@ -7,7 +7,8 @@ block head
   - var pageTitle = 'Адраджэнне';
 
 block content
-    include ../blocks/navbar
+    .revival_navbar
+        include ../blocks/navbar
     .container_revival 
         h1 адраджэнне
         p Пасля 1917 года Нараўлянскі палац быў нацыяналізаваны. У час II сусветнай вайны моцна пацярпеў, пасля быў аддадзены пад дзіцячы дом. З гэтага часу паволі разбураецца. 
@@ -60,6 +61,9 @@ block content
             img(src='../../../../../PALAC/app/resources/modern_look.png' alt="Сучасны стан фантана ля палаца")
             figcaption Сучасны стан фантана ля палаца
     include ../blocks/revival_live
+    h2 дапамога
+    include ../blocks/donate  
+    include ../blocks/recover
 
 
 

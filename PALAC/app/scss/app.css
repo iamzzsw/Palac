@@ -512,7 +512,7 @@ h5, .h5 {
 
 .layout-footer__base {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  height: 5.8rem;
 }
 
 .layout-footer__row {
@@ -520,23 +520,20 @@ h5, .h5 {
   margin-right: -3rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 134.4rem;
   margin: auto;
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
 }
 
-.layout-footer__cell {
-  padding-left: 3rem;
-  padding-right: 3rem;
+.layout-footer__cell .copyright {
+  color: #000;
+  font-size: 1.6rem;
 }
-.layout-footer__cell p {
+.layout-footer__cell .copyright p {
   margin: 0;
   padding: 0;
-}
-
-.copyright {
-  color: #000;
 }
 
 .developer {
@@ -547,6 +544,7 @@ h5, .h5 {
 .developer a {
   text-decoration: none;
   color: #000;
+  font-size: 1.6rem;
 }
 .developer .icon-pras {
   width: 8.5rem;
@@ -900,11 +898,11 @@ input[type=submit]:hover {
 }
 .socials-container .inst {
   border: 1px solid rgba(203, 1, 122, 0.2);
-  background: rgba(203, 1, 122, 0.5);
+  background: rgba(203, 1, 122, 0.7);
 }
 .socials-container .facebook {
   border: 1px solid rgba(24, 119, 242, 0.2);
-  background: rgba(24, 119, 242, 0.5);
+  background: rgba(24, 119, 242, 0.7);
 }
 
 .container p {
@@ -928,14 +926,20 @@ input[type=submit]:hover {
 .container .buttons {
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  max-width: 30%;
+  margin: 5rem auto 3rem;
+  max-width: 34rem;
 }
 .container .images {
+  margin: 5rem 0 20rem;
   width: 100%;
 }
 .container .images img {
   width: 25%;
+}
+
+.revival_navbar {
+  max-width: 134.4rem;
+  margin: 4.6rem auto;
 }
 
 .container_revival {

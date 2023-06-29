@@ -1,10 +1,11 @@
 .layout-footer {
     background-color: $bg-default;
+
 }
 
 .layout-footer__base {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    height: 5.8rem;
 
 }
 
@@ -13,6 +14,7 @@
     margin-right: -3rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 134.4rem;
     margin: auto;
     font-size: 1.6rem;
@@ -20,18 +22,20 @@
 }
 
 .layout-footer__cell {
-    padding-left: 3rem;
-    padding-right: 3rem;
-
-    p {
-        margin:0;
-        padding: 0;
+    // padding-left: 3rem;
+    // padding-right: 3rem;
+    .copyright {
+        color: $text-black;
+        font-size: 1.6rem;
+        p {
+            margin:0;
+            padding: 0;
+        }
     }
+
 }
 
-.copyright {
-    color: $text-black;
-}
+
 
 .developer {
     color: $text-black;
@@ -40,6 +44,7 @@
     a {
         text-decoration: none;
         color: $text-black;
+        font-size: 1.6rem;
     }
 
     .icon-pras {
