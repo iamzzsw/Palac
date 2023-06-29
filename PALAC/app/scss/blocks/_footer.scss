@@ -20,13 +20,11 @@
 }
 
 .layout-footer__cell {
+    display: flex;
     padding-left: 3rem;
     padding-right: 3rem;
-
-    p {
-        margin:0;
-        padding: 0;
-    }
+    align-items: center;
+    align-content: center;
 }
 
 .copyright {

@@ -8,7 +8,7 @@
 	background: linear-gradient($bg-default 0%, $bg-light 50%),$bg-light;
 	background-repeat: no-repeat;
 }
-.container.help {
+.container-help {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -27,12 +27,13 @@
 	}
 }
 
-.section-404__button {
-	position: absolute;
-	top: 0;
-	right: 0;
-	max-width: calc(50% - 4rem);
-	padding-right: 10rem;
+.nav-end {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	max-width: 116rem;
+	margin-top: 6.6rem;
 }
 
 @media (max-width: $desktop-screen) {

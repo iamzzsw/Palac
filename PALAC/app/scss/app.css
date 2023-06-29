@@ -527,12 +527,11 @@ h5, .h5 {
 }
 
 .layout-footer__cell {
+  display: flex;
   padding-left: 3rem;
   padding-right: 3rem;
-}
-.layout-footer__cell p {
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  align-content: center;
 }
 
 .copyright {
@@ -835,27 +834,27 @@ input[type=submit]:hover {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 85.3rem;
+  height: 82.3rem;
 }
 .recover-container .recover {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
   font-size: 15rem;
-  font-family: "Oranienbaum", serif;
+  font-family: Oranienbaum;
+  font-style: normal;
+  font-weight: 400;
   line-height: 17rem;
   letter-spacing: 1.5rem;
   text-transform: uppercase;
-  padding-top: 37.1rem;
   margin: 0;
+  padding-top: 37.1rem;
 }
-.recover-container .nav-end {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  max-width: 116rem;
-  margin-top: 9.8rem;
-  padding-bottom: 3.2rem;
+.recover-container h1 {
+  margin: 0;
+  margin-top: -3.7rem;
+  font-size: 8.4rem;
+  line-height: 17rem;
+  letter-spacing: 0.756rem;
 }
 
 .socials-container {
@@ -876,6 +875,7 @@ input[type=submit]:hover {
   border-radius: 80px;
   -webkit-backdrop-filter: blur(2.5px);
           backdrop-filter: blur(2.5px);
+  line-height: 0;
   text-align: center;
   display: flex;
   align-items: center;
@@ -900,11 +900,11 @@ input[type=submit]:hover {
 }
 .socials-container .inst {
   border: 1px solid rgba(203, 1, 122, 0.2);
-  background: rgba(203, 1, 122, 0.5);
+  background: rgba(203, 1, 122, 0.7);
 }
 .socials-container .facebook {
   border: 1px solid rgba(24, 119, 242, 0.2);
-  background: rgba(24, 119, 242, 0.5);
+  background: rgba(24, 119, 242, 0.7);
 }
 
 .container p {
@@ -932,10 +932,109 @@ input[type=submit]:hover {
   max-width: 30%;
 }
 .container .images {
+  display: flex;
   width: 100%;
 }
 .container .images img {
   width: 25%;
+}
+
+.page-color {
+  background: linear-gradient(180deg, #93A480 40%, #F8F7F3 40%), #F8F7F3;
+  background-repeat: no-repeat;
+}
+
+.section-welcome .recover {
+  color: rgba(0, 0, 0, 0.15);
+  margin: 0;
+  text-align: center;
+  font-size: 18rem;
+  font-family: "Oranienbaum", serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3.6rem;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 17rem;
+}
+.section-welcome h1 {
+  position: relative;
+  font-size: 12rem;
+  letter-spacing: 1.08rem;
+  padding: 0;
+  margin-bottom: 9.6rem;
+}
+.section-welcome figure {
+  position: absolute;
+  left: 24.1rem;
+  top: 3.5rem;
+  z-index: 0;
+}
+.section-welcome .nav-div {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.about {
+  margin-top: 36.8rem;
+  margin-bottom: 5.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-text {
+  max-width: 32rem;
+  margin-right: 4rem;
+}
+.about .about-text p {
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  line-height: 160%;
+  margin-top: 3rem;
+}
+.about .follow {
+  margin-left: 4rem;
+}
+.about .follow .follow-text {
+  color: #000;
+  font-size: 2.4rem;
+  font-family: Noto Serif;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+.about .follow .hashtags {
+  color: #000;
+  font-size: 1.6rem;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.032rem;
+  width: 32rem;
+  opacity: 0.5;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  background: #C2C8B6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+  padding-top: 4.6rem;
+  padding-bottom: 4rem;
+}
+.footer-nav .navbar_container {
+  margin-top: 8rem;
 }
 
 .container_revival {
@@ -1049,30 +1148,31 @@ input[type=submit]:hover {
   background-repeat: no-repeat;
 }
 
-.container.help {
+.container-help {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   margin-top: 8.2rem;
 }
-.container.help p {
+.container-help p {
   color: #000;
   font-size: 2rem;
   font-family: Raleway;
   line-height: 160%;
   margin-top: 6rem;
 }
-.container.help .section-title {
+.container-help .section-title {
   color: #fff;
 }
 
-.section-404__button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: calc(50% - 4rem);
-  padding-right: 10rem;
+.nav-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 116rem;
+  margin-top: 6.6rem;
 }
 
 @media (max-width: 1680px) {

@@ -1,0 +1,108 @@
+.page-color {
+    background: linear-gradient(180deg, $bg-default 40%, $bg-light  40%),$bg-light;
+	background-repeat: no-repeat;
+}
+
+.section-welcome {
+    .recover {
+        color: rgba($text-black, 0.15);
+        margin: 0;
+        text-align: center;
+        font-size: 18rem;
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 3.6rem;
+        text-transform: uppercase;
+        position: relative;
+        margin-top: 17rem;
+    }
+
+    h1 {
+        position: relative;
+        font-size: 12rem;
+        letter-spacing: 1.08rem;
+        padding: 0;
+        margin-bottom: 9.6rem;
+    }
+
+    figure {
+        position: absolute;
+        left: 24.1rem;
+        top: 3.5rem;
+        z-index: 0;
+    }
+
+    .nav-div {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+}
+
+.about {
+    margin-top: 36.8rem;
+    margin-bottom: 5.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-text {
+        max-width: 32rem;
+        margin-right: 4rem;
+        p {
+            color: $text-white;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            font-family: $font-default;
+            line-height: 160%;
+            margin-top: 3rem;
+        }
+    }
+
+    .follow {
+        margin-left: 4rem;
+        .follow-text {
+            color: #000;
+            font-size: 2.4rem;
+            font-family: Noto Serif;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 2.8rem;
+        }
+
+        .hashtags {
+            color: #000;
+            font-size: 1.6rem;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.032rem;
+            width: 32rem;
+            opacity: 0.5;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.footer-nav {
+    background: $bg-main-footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding-top: 4.6rem;
+    padding-bottom: 4rem;
+
+    .navbar_container {
+        margin-top: 8rem;
+    }
+
+}
+
