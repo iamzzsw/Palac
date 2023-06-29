@@ -1046,11 +1046,34 @@ input[type=submit]:hover {
   background: linear-gradient(180deg, #93A480 0%, #F8F7F3 100%), #F8F7F3;
   background-repeat: no-repeat;
   height: 147rem;
+  overflow-x: hidden;
+}
+.page-gradient::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.04;
+  pointer-events: none;
+  background: url(../resources/noise.gif);
 }
 
 .page-gradient-help {
   background: linear-gradient(#93A480 0%, #F8F7F3 50%), #F8F7F3;
   background-repeat: no-repeat;
+}
+.page-gradient-help::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.04;
+  pointer-events: none;
+  background: url(../resources/noise.gif);
 }
 
 .container.help {
