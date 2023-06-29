@@ -522,6 +522,7 @@ h5, .h5 {
   justify-content: space-between;
   align-items: center;
   max-width: 134.4rem;
+  padding: 0 1.5rem;
   margin: auto;
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
@@ -922,6 +923,7 @@ input[type=submit]:hover {
   font-family: "Raleway", sans-serif;
   line-height: 150%;
   letter-spacing: 0.032rem;
+  opacity: 0.5;
 }
 .container .buttons {
   display: flex;
@@ -936,7 +938,43 @@ input[type=submit]:hover {
 .container .images img {
   width: 25%;
 }
+.container .images_full {
+  display: none;
+}
 
+@media (max-width: 1023px) {
+  .container p {
+    max-width: 68.8rem;
+  }
+  .container .images {
+    display: none;
+  }
+  .container .images_full {
+    margin: 5rem 0 11rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .images_full_container {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .images_full_container img {
+    width: 50%;
+  }
+  .container .images_full_single {
+    width: 50%;
+  }
+  .container .images_full_single img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  p {
+    padding: 1rem 2rem;
+  }
+}
 .revival_navbar {
   max-width: 134.4rem;
   margin: 4.6rem auto;
@@ -983,13 +1021,8 @@ input[type=submit]:hover {
 .container_revival figure {
   max-width: 100%;
   position: relative;
-  width: 100%;
   margin: 4.72rem 0 0 -22rem;
   padding: 0 1rem;
-}
-.container_revival figure img {
-  max-height: inherit;
-  width: auto;
 }
 .container_revival figure figcaption {
   font-size: 1.6rem;
@@ -1042,6 +1075,124 @@ input[type=submit]:hover {
   left: 0;
 }
 
+@media (max-width: 1023px) {
+  .container_revival {
+    max-width: 68.8rem;
+  }
+  .container_revival .double {
+    max-width: 68.8rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 4.72rem 0 0 0;
+  }
+  .container_revival .double figure {
+    margin: 0;
+    width: 50%;
+  }
+  .container_revival .double figure img {
+    max-width: 100%;
+    max-height: inherit;
+    width: auto;
+  }
+  .container_revival blockquote {
+    max-width: 50rem;
+    margin: 4.8rem auto;
+  }
+  .container_revival figure {
+    margin: 4.72rem 0 0 0;
+  }
+  .container_revival figure img {
+    max-width: 100%;
+    max-height: inherit;
+    width: auto;
+  }
+  .container_revival figure figcaption {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 1.16rem 0 4.8rem 1.2rem;
+  }
+}
+@media (max-width: 767px) {
+  .revival_navbar {
+    padding: 0 1.5rem;
+  }
+  .container_revival {
+    margin: 2.2rem auto;
+    font-family: "Raleway", sans-serif;
+  }
+  .container_revival h1 {
+    margin-bottom: 4rem;
+  }
+  .container_revival p {
+    padding: 1rem 2rem;
+  }
+  .container_revival .double {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 4.72rem 0 0 0;
+  }
+  .container_revival .double figure {
+    width: 100%;
+    margin: 0;
+  }
+  .container_revival blockquote {
+    max-width: 26.2rem;
+  }
+  .container_revival blockquote::before {
+    content: url("../resources/commos.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container_revival figure {
+    padding: 0 1rem 4rem;
+  }
+  .container_revival .participants {
+    margin: 4.8rem 0;
+  }
+  .container_revival .participants .participants_item {
+    display: flex;
+  }
+  .container_revival .participants .participants_item figure {
+    width: 50%;
+    max-width: 50%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .container_revival .participants .participants_item figure img {
+    width: 100%;
+  }
+  .container_revival .participants .participants_item .info {
+    width: 50%;
+    padding: 1.2rem 0 0 4rem;
+  }
+  .container_revival .participants .participants_item .info p {
+    padding: 0;
+    font-size: 1.6rem;
+    opacity: 0.5;
+    line-height: 160%;
+    margin-top: 2rem;
+  }
+  .container_revival .participants .participants_item .info blockquote {
+    font-size: 2rem;
+    color: #000;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    margin: 0;
+    padding-left: 3.4rem;
+    position: relative;
+  }
+  .container_revival .participants .participants_item .info blockquote p {
+    opacity: 1;
+  }
+  .container_revival .participants .participants_item .info blockquote::before {
+    content: url("../resources/commos.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 .page-gradient {
   background: linear-gradient(180deg, #93A480 0%, #F8F7F3 100%), #F8F7F3;
   background-repeat: no-repeat;
