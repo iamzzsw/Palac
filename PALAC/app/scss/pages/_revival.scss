@@ -54,10 +54,10 @@
   .participants {
     margin: 4.8rem 0;
     .participants_item {
-      display: flex;
+    //   display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
       figure {
-        width: 50%;
-        max-width: 50%;
         position: relative;
         margin: 0;
         padding: 0;
@@ -65,8 +65,11 @@
           width: 100%;
         }
       }
+        .hide {
+            display: none;
+        }
+
       .info {
-        width: 50%;
         padding: 1.2rem 0 0 4rem;
         p {
           padding: 0;
@@ -76,7 +79,6 @@
           margin-top: 2rem;
         }
         blockquote {
-          font-size: 2rem;
           color: $text-black;
           font-family: $font-quote;
           font-style: italic;
@@ -84,6 +86,7 @@
           padding-left: 3.4rem;
           position: relative;
           p {
+            font-size: 2rem;
             opacity: 1;
           }
           &::before {
@@ -174,11 +177,10 @@
         }
         .participants {
           margin: 4.8rem 0;
+          padding: 0 1.5rem;
           .participants_item {
-            display: flex;
+
             figure {
-              width: 50%;
-              max-width: 50%;
               position: relative;
               margin: 0;
               padding: 0;
@@ -186,9 +188,16 @@
                 width: 100%;
               }
             }
+            .hide {
+                display: block;
+                padding: 1.2rem 0 0 4rem;
+            }
             .info {
-              width: 50%;
               padding: 1.2rem 0 0 4rem;
+              grid-column: 1 / 3;
+              h4 {
+                display: none;
+              }
               p {
                 padding: 0;
                 font-size: 1.6rem;
@@ -196,24 +205,7 @@
                 line-height: 160%;
                 margin-top: 2rem;
               }
-              blockquote {
-                font-size: 2rem;
-                color: $text-black;
-                font-family: $font-quote;
-                font-style: italic;
-                margin: 0;
-                padding-left: 3.4rem;
-                position: relative;
-                p {
-                  opacity: 1;
-                }
-                &::before {
-                  content: url("../resources/commos.png");
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                }
-              }
+
             }
           }
         }

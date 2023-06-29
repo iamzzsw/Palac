@@ -437,6 +437,9 @@ h5, .h5 {
   color: #fff;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.036rem;
   cursor: pointer;
   margin-left: 4rem;
   width: 15rem;
@@ -700,6 +703,61 @@ h5, .h5 {
 }
 .nav-list__item:last-child {
   border-bottom: none;
+}
+
+.drop_down_header {
+  position: fixed;
+  top: -6rem;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transition: all 0.4s;
+}
+.drop_down_header .button {
+  position: relative;
+}
+.drop_down_header .header_contant {
+  margin: auto;
+  max-width: 134.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  padding: 0 2rem;
+}
+.drop_down_header .header_contant .logo {
+  font-family: "Oranienbaum", serif;
+  font-size: 2.8rem;
+  text-align: center;
+  letter-spacing: 0.56rem;
+}
+.drop_down_header .header_contant .button_help_header {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  margin-left: 4rem;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 80px;
+  border: 1px solid rgba(240, 194, 53, 0.2);
+  background: rgba(240, 194, 53, 0.5);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.036rem;
+}
+.drop_down_header .header_contant .button_help_header:hover {
+  border: 1px solid rgba(106, 108, 100, 0.2);
+  background: rgba(106, 108, 100, 0.4);
 }
 
 .donate-container {
@@ -1033,11 +1091,10 @@ input[type=submit]:hover {
   margin: 4.8rem 0;
 }
 .container_revival .participants .participants_item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .container_revival .participants .participants_item figure {
-  width: 50%;
-  max-width: 50%;
   position: relative;
   margin: 0;
   padding: 0;
@@ -1045,8 +1102,10 @@ input[type=submit]:hover {
 .container_revival .participants .participants_item figure img {
   width: 100%;
 }
+.container_revival .participants .participants_item .hide {
+  display: none;
+}
 .container_revival .participants .participants_item .info {
-  width: 50%;
   padding: 1.2rem 0 0 4rem;
 }
 .container_revival .participants .participants_item .info p {
@@ -1057,7 +1116,6 @@ input[type=submit]:hover {
   margin-top: 2rem;
 }
 .container_revival .participants .participants_item .info blockquote {
-  font-size: 2rem;
   color: #000;
   font-family: "Noto Serif", serif;
   font-style: italic;
@@ -1066,6 +1124,7 @@ input[type=submit]:hover {
   position: relative;
 }
 .container_revival .participants .participants_item .info blockquote p {
+  font-size: 2rem;
   opacity: 1;
 }
 .container_revival .participants .participants_item .info blockquote::before {
@@ -1149,13 +1208,9 @@ input[type=submit]:hover {
   }
   .container_revival .participants {
     margin: 4.8rem 0;
-  }
-  .container_revival .participants .participants_item {
-    display: flex;
+    padding: 0 1.5rem;
   }
   .container_revival .participants .participants_item figure {
-    width: 50%;
-    max-width: 50%;
     position: relative;
     margin: 0;
     padding: 0;
@@ -1163,9 +1218,16 @@ input[type=submit]:hover {
   .container_revival .participants .participants_item figure img {
     width: 100%;
   }
-  .container_revival .participants .participants_item .info {
-    width: 50%;
+  .container_revival .participants .participants_item .hide {
+    display: block;
     padding: 1.2rem 0 0 4rem;
+  }
+  .container_revival .participants .participants_item .info {
+    padding: 1.2rem 0 0 4rem;
+    grid-column: 1/3;
+  }
+  .container_revival .participants .participants_item .info h4 {
+    display: none;
   }
   .container_revival .participants .participants_item .info p {
     padding: 0;
@@ -1173,24 +1235,6 @@ input[type=submit]:hover {
     opacity: 0.5;
     line-height: 160%;
     margin-top: 2rem;
-  }
-  .container_revival .participants .participants_item .info blockquote {
-    font-size: 2rem;
-    color: #000;
-    font-family: "Noto Serif", serif;
-    font-style: italic;
-    margin: 0;
-    padding-left: 3.4rem;
-    position: relative;
-  }
-  .container_revival .participants .participants_item .info blockquote p {
-    opacity: 1;
-  }
-  .container_revival .participants .participants_item .info blockquote::before {
-    content: url("../resources/commos.png");
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 }
 .page-gradient {
