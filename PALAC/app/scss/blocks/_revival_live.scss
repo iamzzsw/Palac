@@ -18,6 +18,12 @@
    
         }
     }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 30%;
+    }
     .images {
         width: 100%;
         img {
