@@ -15,20 +15,67 @@
             font-family: $font-default;
             line-height: 150%;
             letter-spacing: 0.032rem;
-   
+            opacity: 0.5;
         }
     }
     .buttons {
         display: flex;
         justify-content: space-between;
-        margin: auto;
-        max-width: 30%;
+        margin: 5rem auto 3rem;
+        max-width: 34rem;
     }
     .images {
+
         display: flex;
+
+        margin: 5rem 0 20rem;
+
         width: 100%;
         img {
             width: 25%;
         }
     }
+    .images_full {
+        display: none;
+    }
+}
+
+@media (max-width: $table-screen) {
+    .container {
+        p {
+            max-width: 68.8rem;
+
+        }
+        .images {
+            display: none;
+        }
+        .images_full {
+            margin: 5rem 0 11rem;
+            display: flex;
+            flex-wrap: wrap;
+            
+            &_container {
+                width: 50%;
+                display: flex;
+                flex-wrap: wrap;
+                img {
+                    width: 50%;
+                }
+            }
+            &_single {
+                width: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-screen) {
+    p {
+        padding: 1rem 2rem;
+    }
+
 }

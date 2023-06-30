@@ -1,3 +1,7 @@
+.revival_navbar {
+  max-width: 134.4rem;
+  margin: 4.6rem auto;
+}
 .container_revival {
   margin: 12rem auto;
   font-family: $font-default;
@@ -18,8 +22,7 @@
     justify-content: space-around;
     margin: 4.72rem 0 0 -22rem;
     figure {
-        margin: 0;
-
+      margin: 0;
     }
   }
   blockquote {
@@ -29,26 +32,19 @@
     margin: 4.8rem 0;
     padding-left: 3.4rem;
     position: relative;
-    &::before  {
+    &::before {
       content: url("../resources/commos.svg");
       position: absolute;
       top: 0;
       left: 0;
     }
-
   }
   figure {
     // max-width: 116rem;
     max-width: 100%;
     position: relative;
-    width: 100%;
     margin: 4.72rem 0 0 -22rem;
     padding: 0 1rem;
-    img {
-    //   max-width: 100%;
-      max-height: inherit;
-      width: auto;
-    }
     figcaption {
       font-size: 1.6rem;
       color: rgba($text-black, 0.5);
@@ -58,10 +54,10 @@
   .participants {
     margin: 4.8rem 0;
     .participants_item {
-      display: flex;
+    //   display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
       figure {
-        width: 50%;
-        max-width: 50%;
         position: relative;
         margin: 0;
         padding: 0;
@@ -69,8 +65,11 @@
           width: 100%;
         }
       }
+        .hide {
+            display: none;
+        }
+
       .info {
-        width: 50%;
         padding: 1.2rem 0 0 4rem;
         p {
           padding: 0;
@@ -80,7 +79,6 @@
           margin-top: 2rem;
         }
         blockquote {
-          font-size: 2rem;
           color: $text-black;
           font-family: $font-quote;
           font-style: italic;
@@ -88,17 +86,128 @@
           padding-left: 3.4rem;
           position: relative;
           p {
+            font-size: 2rem;
             opacity: 1;
           }
-          &::before  {
+          &::before {
             content: url("../resources/commos.png");
             position: absolute;
             top: 0;
             left: 0;
           }
-
         }
       }
     }
   }
+}
+
+@media (max-width: $table-screen) {
+  .container_revival {
+    max-width: 68.8rem;
+    .double {
+      max-width: 68.8rem;
+      display: flex;
+      justify-content: space-around;
+      margin: 4.72rem 0 0 0;
+      figure {
+        margin: 0;
+        width: 50%;
+        img {
+            max-width: 100%;
+            max-height: inherit;
+            width: auto;
+        }
+      }
+    }
+    blockquote {
+      max-width: 50rem;
+      margin: 4.8rem auto;
+    }
+    figure {
+      margin: 4.72rem 0 0 0;
+
+      img {
+        max-width: 100%;
+        max-height: inherit;
+        width: auto;
+      }
+
+      figcaption {
+        font-size: 1.6rem;
+        color: rgba($text-black, 0.5);
+        padding: 1.16rem 0 4.8rem 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-screen) {
+    .revival_navbar {
+        padding: 0 1.5rem;
+      }
+      .container_revival {
+        margin: 2.2rem auto;
+        font-family: $font-default;
+        h1 {
+          margin-bottom: 4rem;
+        }
+        p {
+          padding: 1rem 2rem;
+        }
+        .double {
+          width: 100%;
+          flex-wrap: wrap;
+          margin: 4.72rem 0 0 0;
+          figure {
+            width: 100%;
+            margin: 0;
+          }
+        }
+        blockquote {
+          max-width: 26.2rem;
+          &::before {
+            content: url("../resources/commos.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+        figure {
+          padding: 0 1rem 4rem;
+        }
+        .participants {
+          margin: 4.8rem 0;
+          padding: 0 1.5rem;
+          .participants_item {
+
+            figure {
+              position: relative;
+              margin: 0;
+              padding: 0;
+              img {
+                width: 100%;
+              }
+            }
+            .hide {
+                display: block;
+                padding: 1.2rem 0 0 4rem;
+            }
+            .info {
+              padding: 1.2rem 0 0 4rem;
+              grid-column: 1 / 3;
+              h4 {
+                display: none;
+              }
+              p {
+                padding: 0;
+                font-size: 1.6rem;
+                opacity: 0.5;
+                line-height: 160%;
+                margin-top: 2rem;
+              }
+
+            }
+          }
+        }
+      }
 }

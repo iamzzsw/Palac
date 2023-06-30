@@ -4,8 +4,7 @@
 
 .layout-footer__base {
     padding-top: 4rem;
-    padding-bottom: 4rem;
-
+    height: 5.8rem;
 }
 
 .layout-footer__row {
@@ -13,13 +12,16 @@
     margin-right: -3rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 134.4rem;
+    padding: 0 1.5rem;
     margin: auto;
     font-size: 1.6rem;
     font-family: $font-default;
 }
 
 .layout-footer__cell {
+
     display: flex;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -27,9 +29,21 @@
     align-content: center;
 }
 
-.copyright {
-    color: $text-black;
+    // padding-left: 3rem;
+    // padding-right: 3rem;
+    .copyright {
+        color: $text-black;
+        font-size: 1.6rem;
+        p {
+            margin:0;
+            padding: 0;
+        }
+    }
+
+
 }
+
+
 
 .developer {
     color: $text-black;
@@ -38,6 +52,7 @@
     a {
         text-decoration: none;
         color: $text-black;
+        font-size: 1.6rem;
     }
 
     .icon-pras {

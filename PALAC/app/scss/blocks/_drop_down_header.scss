@@ -1,0 +1,53 @@
+.drop_down_header {
+    position: fixed;
+    top: -6rem;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    z-index: 10;
+    transition: all .4s;
+    .button {
+        position: relative;
+    }
+    .header_contant  {
+        margin: auto;
+        max-width: 134.4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 6rem;
+        padding: 0 2rem;
+        .logo {
+            font-family: $font-primary;
+            font-size: 2.8rem;
+            text-align: center;
+            letter-spacing: 0.56rem;
+          }
+        .button_help_header {
+            color: $text-white;
+            font-family: $font-default;
+            cursor: pointer;
+            margin-left: 4rem;
+            width: 15rem;
+            height: 4rem;
+            border-radius: 80px;
+            border: 1px solid rgba($but-help, 0.2);
+            background: rgba($but-help, 0.5);
+            backdrop-filter: blur(2.5px);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            transition: all .4s;
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 0.036rem;
+            &:hover {
+              border: 1px solid rgba($text-hover, 0.20);
+              background: rgba($text-hover, 0.40);
+            }
+        }
+    }
+}
