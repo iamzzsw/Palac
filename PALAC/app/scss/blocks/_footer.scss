@@ -21,6 +21,14 @@
 }
 
 .layout-footer__cell {
+
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    align-items: center;
+    align-content: center;
+}
+
     // padding-left: 3rem;
     // padding-right: 3rem;
     .copyright {
@@ -31,6 +39,7 @@
             padding: 0;
         }
     }
+
 
 }
 

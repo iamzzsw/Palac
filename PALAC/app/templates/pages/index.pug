@@ -1,17 +1,43 @@
 extends ../layout/layout-default
 
 block vars
-  - var bodyClass = 'page-gradient-help';
+  - var bodyClass = 'page-color'
 
 block head
   - var pageTitle = 'ГОРВАРТС';
 
 block content
-    .section.section-welcome
-    .container.help
-      h1 ДАПАМОГА
-      p  Палацава-паркаваму комплексу Горватаў патрэбна ваша дапамога. <br>
-        | Вы можаце дапамагчы грашыма або валанцёрскай працай. <br>
-        | Наша каманда будзе рада любой дапамогі.
-    include ../blocks/donate  
-    include ../blocks/recover
+    .container-main
+      .section-welcome
+        figure 
+          img(src="../../../../../PALAC/app/resources/bust.png" alt="Бюст")
+        p.recover Аднаўляем
+        h1  Нараўлянскі палац
+        .nav-div
+         include ../blocks/navbar
+      .about
+       .about-text
+        p У 2021 годзе пачаўся праект па адраджэнні палаца Горваттаў у Нароўлі (Беларусь). 
+        p Гісторыя зрабіла кола і працягнула падарожжа, якое пачалося ў канцы ХІХ стагоддзя Даніэлем Горваттам і яго жонкай Іфігеніяй Ратынскай, а сёння падхопленае пісьменнікам Андрэем Горватам і паплечнікамі.
+       .follow 
+        p.follow-text Сачыце за адраджэннем
+        p.hashtags #gorvats   #narovlia   #palace_narovlia   #адраджэнне_палацу    
+        include ../blocks/socials
+      .container
+        .images 
+          img(src="../../inst1.png")
+          img(src="../../inst2.png")
+          img(src="../../inst3.png")
+          img(src="../../inst4.png")
+      include ../blocks/donate
+      include ../blocks/recover
+      .container
+        .images 
+          img(src="../../inst1.png")
+          img(src="../../inst2.png")
+          img(src="../../inst3.png")
+          img(src="../../inst4.png")
+      .footer-nav 
+        include ../blocks/socials 
+        include ../blocks/navbar
+           
