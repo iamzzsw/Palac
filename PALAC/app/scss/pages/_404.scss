@@ -1,8 +1,9 @@
 .page-gradient {
-	background: linear-gradient(180deg, $bg-default 0%, $bg-light 100%),$bg-light;
+	background: linear-gradient(180deg, $bg-default 0%, $bg-light 100%), $bg-light;
 	background-repeat: no-repeat;
 	height: 147rem;
 	overflow-x: hidden;
+
 	&::before {
 		position: fixed;
 		top: 0;
@@ -19,8 +20,9 @@
 
 
 .page-gradient-help {
-	background: linear-gradient($bg-default 0%, $bg-light 50%),$bg-light;
+	background: linear-gradient($bg-default 0%, $bg-light 50%), $bg-light;
 	background-repeat: no-repeat;
+
 	&::before {
 		position: fixed;
 		top: 0;
@@ -34,12 +36,14 @@
 		background: url(../resources/noise.gif);
 	}
 }
+
 .container-help {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
-    margin-top: 8.2rem;
+	margin-top: 8.2rem;
+
 	p {
 		color: #000;
 		font-size: 2rem;
@@ -50,6 +54,12 @@
 
 	.section-title {
 		color: $text-white;
+	}
+    
+	.button-help {
+		border-radius: 8rem;
+		border: 1px solid rgba(0, 0, 0, 0.20);
+		background: rgba(0, 0, 0, 0.20);
 	}
 }
 

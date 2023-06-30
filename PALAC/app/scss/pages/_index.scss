@@ -1,5 +1,5 @@
 .page-color {
-    background: linear-gradient(180deg, $bg-default 40%, $bg-light  40%),$bg-light;
+    background: linear-gradient(180deg, $bg-default 62%, $bg-light  62%),$bg-light;
 	background-repeat: no-repeat;
 }
 
@@ -40,26 +40,63 @@
     }
 }
 
+.about-text {
+    max-width: 32rem;
+    margin-right: 4rem;
+    p {
+        color: $text-white;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        font-family: $font-default;
+        line-height: 160%;
+        margin-top: 3rem;
+    }
+}
+h2 {
+    margin: 0;
+    padding: 0;
+}
+.map {
+    display: flex;
+    width:100%;
+    background: no-repeat;
+    background-position: right;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -21.7rem;
+    padding-top: 41.61rem;
+    .about-text {
+        margin-right: 40rem;
+        margin-top: 6rem;
+        padding-bottom: 40rem;
+    }
+}
+.hosts {
+    margin-bottom: 4.2rem;
+}
+.hosts-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 11.8rem;
+    margin-top: 3.1rem;
+    .about-text {
+        margin-left: 22rem;
+        padding-right: 4rem;
+    }
+    figure {
+        margin: 0;
+        padding-left: 4rem;
+    }
+}
 .about {
     margin-top: 36.8rem;
     margin-bottom: 5.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .about-text {
-        max-width: 32rem;
-        margin-right: 4rem;
-        p {
-            color: $text-white;
-            font-size: 2rem;
-            font-style: normal;
-            font-weight: 400;
-            font-family: $font-default;
-            line-height: 160%;
-            margin-top: 3rem;
-        }
-    }
 
     .follow {
         margin-left: 4rem;
@@ -103,6 +140,14 @@
     .navbar_container {
         margin-top: 8rem;
     }
-
 }
+
+.container-main {
+    .container {
+        .images {
+        margin: 0;
+        }
+    }
+}
+
 

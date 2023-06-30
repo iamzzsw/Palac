@@ -336,7 +336,7 @@ h2, .h2 {
   font-size: 6.4rem;
   font-weight: 400;
   font-family: "Oranienbaum", serif;
-  color: #000;
+  color: #fff;
   margin: 8rem 0 4rem;
   text-align: center;
   line-height: 150%;
@@ -531,22 +531,21 @@ h5, .h5 {
   font-family: "Raleway", sans-serif;
 }
 
-
 .layout-footer__cell {
   display: flex;
   padding-left: 3rem;
   padding-right: 3rem;
   align-items: center;
   align-content: center;
+}
 
-.layout-footer__cell .copyright {
+.copyright {
   color: #000;
   font-size: 1.6rem;
 }
-.layout-footer__cell .copyright p {
+.copyright p {
   margin: 0;
   padding: 0;
-
 }
 
 .developer {
@@ -1000,11 +999,8 @@ input[type=submit]:hover {
   max-width: 34rem;
 }
 .container .images {
-
   display: flex;
-
   margin: 5rem 0 20rem;
-
   width: 100%;
 }
 .container .images img {
@@ -1047,13 +1043,8 @@ input[type=submit]:hover {
     padding: 1rem 2rem;
   }
 }
-.revival_navbar {
-  max-width: 134.4rem;
-  margin: 4.6rem auto;
-}
-
 .page-color {
-  background: linear-gradient(180deg, #93A480 40%, #F8F7F3 40%), #F8F7F3;
+  background: linear-gradient(180deg, #93A480 62%, #F8F7F3 62%), #F8F7F3;
   background-repeat: no-repeat;
 }
 
@@ -1089,18 +1080,11 @@ input[type=submit]:hover {
   justify-content: center;
 }
 
-.about {
-  margin-top: 36.8rem;
-  margin-bottom: 5.1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about .about-text {
+.about-text {
   max-width: 32rem;
   margin-right: 4rem;
 }
-.about .about-text p {
+.about-text p {
   color: #fff;
   font-size: 2rem;
   font-style: normal;
@@ -1108,6 +1092,56 @@ input[type=submit]:hover {
   font-family: "Raleway", sans-serif;
   line-height: 160%;
   margin-top: 3rem;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  display: flex;
+  width: 100%;
+  background: no-repeat;
+  background-position: right;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -21.7rem;
+  padding-top: 41.61rem;
+}
+.map .about-text {
+  margin-right: 40rem;
+  margin-top: 6rem;
+  padding-bottom: 40rem;
+}
+
+.hosts {
+  margin-bottom: 4.2rem;
+}
+
+.hosts-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 11.8rem;
+  margin-top: 3.1rem;
+}
+.hosts-content .about-text {
+  margin-left: 22rem;
+  padding-right: 4rem;
+}
+.hosts-content figure {
+  margin: 0;
+  padding-left: 4rem;
+}
+
+.about {
+  margin-top: 36.8rem;
+  margin-bottom: 5.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about .follow {
   margin-left: 4rem;
@@ -1148,6 +1182,15 @@ input[type=submit]:hover {
 }
 .footer-nav .navbar_container {
   margin-top: 8rem;
+}
+
+.container-main .container .images {
+  margin: 0;
+}
+
+.revival_navbar {
+  max-width: 134.4rem;
+  margin: 4.6rem auto;
 }
 
 .container_revival {
@@ -1399,6 +1442,11 @@ input[type=submit]:hover {
 }
 .container-help .section-title {
   color: #fff;
+}
+.container-help .button-help {
+  border-radius: 8rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .nav-end {
