@@ -1,8 +1,23 @@
 .page-color {
-    background: linear-gradient(180deg, $bg-default 62%, $bg-light  62%),$bg-light;
-	background-repeat: no-repeat;
+    background: linear-gradient(180deg, $bg-default 60%, $bg-light 60%), $bg-light;
+    background-repeat: no-repeat;
 }
+.container-main {
+    .container {
+        .images {
+            margin: 0;
+        }
+    }
 
+    h2 {
+        color: $text-white;
+        margin: 0;
+        padding: 0;
+    }
+    .help-article {
+        color: $text-black;
+    }
+}
 .section-welcome {
     .recover {
         color: rgba($text-black, 0.15);
@@ -43,6 +58,7 @@
 .about-text {
     max-width: 32rem;
     margin-right: 4rem;
+
     p {
         color: $text-white;
         font-size: 2rem;
@@ -53,28 +69,29 @@
         margin-top: 3rem;
     }
 }
-h2 {
-    margin: 0;
-    padding: 0;
-}
+
+
 .map {
     display: flex;
-    width:100%;
+    width: 100%;
     background: no-repeat;
     background-position: right;
     flex-direction: column;
     align-items: center;
     margin-top: -21.7rem;
     padding-top: 41.61rem;
+
     .about-text {
         margin-right: 40rem;
         margin-top: 6rem;
         padding-bottom: 40rem;
     }
 }
+
 .hosts {
     margin-bottom: 4.2rem;
 }
+
 .hosts-content {
     display: flex;
     justify-content: center;
@@ -82,15 +99,18 @@ h2 {
     margin: auto;
     padding-bottom: 11.8rem;
     margin-top: 3.1rem;
+
     .about-text {
         margin-left: 22rem;
         padding-right: 4rem;
     }
+
     figure {
         margin: 0;
         padding-left: 4rem;
     }
 }
+
 .about {
     margin-top: 36.8rem;
     margin-bottom: 5.1rem;
@@ -100,6 +120,7 @@ h2 {
 
     .follow {
         margin-left: 4rem;
+
         .follow-text {
             color: #000;
             font-size: 2.4rem;
@@ -142,12 +163,91 @@ h2 {
     }
 }
 
-.container-main {
-    .container {
-        .images {
-        margin: 0;
+.revival-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 73.3rem;
+
+    h2 {
+        padding-top: 20rem;
+    }
+
+    .about-text {
+        margin-right: 40rem;
+        margin-top: 6rem;
+        padding-bottom: 13.4rem;
+    }
+
+    .gallery-block {
+        display: flex;
+        position: absolute;
+        bottom: -43rem;
+        right: 0;
+        max-width: 115rem;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        .participants {
+            margin:0;
+            margin-left: 7rem;
+            min-width: 73rem;
+            .participants_item {
+                //   display: flex;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                figure {
+                    position: relative;
+                    margin: 0;
+                    padding: 0;
+
+                    img {
+                        width: 100%;
+                        max-width: 32rem;
+                        max-height: 39.7rem;
+                    }
+                }
+
+                .hide {
+                    display: none;
+                }
+
+                .info {
+                   margin-top: 6.5rem;
+                    p {
+                        padding: 0;
+                        font-size: 1.6rem;
+                        opacity: 0.5;
+                        line-height: 160%;
+                        margin-top: 2rem;
+                    }
+
+                    blockquote {
+                        color: $text-black;
+                        font-family: $font-quote;
+                        font-style: italic;
+                        margin: 0;
+                        padding-left: 3.4rem;
+                        position: relative;
+
+                        p {
+                            font-size: 2rem;
+                            opacity: 1;
+                        }
+
+                        &::before {
+                            content: url("../resources/commos.png");
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }
-
 

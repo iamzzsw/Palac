@@ -336,7 +336,7 @@ h2, .h2 {
   font-size: 6.4rem;
   font-weight: 400;
   font-family: "Oranienbaum", serif;
-  color: #fff;
+  color: #000;
   margin: 8rem 0 4rem;
   text-align: center;
   line-height: 150%;
@@ -1044,8 +1044,20 @@ input[type=submit]:hover {
   }
 }
 .page-color {
-  background: linear-gradient(180deg, #93A480 62%, #F8F7F3 62%), #F8F7F3;
+  background: linear-gradient(180deg, #93A480 60%, #F8F7F3 60%), #F8F7F3;
   background-repeat: no-repeat;
+}
+
+.container-main .container .images {
+  margin: 0;
+}
+.container-main h2 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.container-main .help-article {
+  color: #000;
 }
 
 .section-welcome .recover {
@@ -1092,11 +1104,6 @@ input[type=submit]:hover {
   font-family: "Raleway", sans-serif;
   line-height: 160%;
   margin-top: 3rem;
-}
-
-h2 {
-  margin: 0;
-  padding: 0;
 }
 
 .map {
@@ -1184,8 +1191,81 @@ h2 {
   margin-top: 8rem;
 }
 
-.container-main .container .images {
+.revival-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 73.3rem;
+}
+.revival-block h2 {
+  padding-top: 20rem;
+}
+.revival-block .about-text {
+  margin-right: 40rem;
+  margin-top: 6rem;
+  padding-bottom: 13.4rem;
+}
+.revival-block .gallery-block {
+  display: flex;
+  position: absolute;
+  bottom: -43rem;
+  right: 0;
+  max-width: 115rem;
+  overflow-x: scroll;
+}
+.revival-block .gallery-block::-webkit-scrollbar {
+  width: 0;
+}
+.revival-block .gallery-block .participants {
   margin: 0;
+  margin-left: 7rem;
+  min-width: 73rem;
+}
+.revival-block .gallery-block .participants .participants_item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.revival-block .gallery-block .participants .participants_item figure {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.revival-block .gallery-block .participants .participants_item figure img {
+  width: 100%;
+  max-width: 32rem;
+  max-height: 39.7rem;
+}
+.revival-block .gallery-block .participants .participants_item .hide {
+  display: none;
+}
+.revival-block .gallery-block .participants .participants_item .info {
+  margin-top: 6.5rem;
+}
+.revival-block .gallery-block .participants .participants_item .info p {
+  padding: 0;
+  font-size: 1.6rem;
+  opacity: 0.5;
+  line-height: 160%;
+  margin-top: 2rem;
+}
+.revival-block .gallery-block .participants .participants_item .info blockquote {
+  color: #000;
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+  margin: 0;
+  padding-left: 3.4rem;
+  position: relative;
+}
+.revival-block .gallery-block .participants .participants_item .info blockquote p {
+  font-size: 2rem;
+  opacity: 1;
+}
+.revival-block .gallery-block .participants .participants_item .info blockquote::before {
+  content: url("../resources/commos.png");
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .revival_navbar {
