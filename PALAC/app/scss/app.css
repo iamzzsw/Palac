@@ -1052,6 +1052,35 @@ input[type=submit]:hover {
   width: 90%;
   margin: 0;
   padding: 0;
+  display: flex;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 8rem;
+  border: 1px solid rgba(248, 247, 243, 0.15);
+  background: rgba(248, 247, 243, 0.2);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  z-index: 1;
+  bottom: 0;
+}
+
+.slick-prev::before {
+  content: url("../resources/prev.svg");
+  padding-right: 0.3rem;
+}
+
+.slick-next::before {
+  content: url("../resources/next.svg");
+  padding-left: 0.3rem;
+}
+
+.slick-disabled {
+  opacity: 0.3;
 }
 
 .container-main .container .images {
