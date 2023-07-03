@@ -1,12 +1,7 @@
-script(src="../../assets/scripts/jquery/jquery-3.2.1.min.js")
-script(src="../../assets/slick/slick.min.js")
-script(src="../../assets/scripts/index.js")
-
-<script>
 $('.center').slick({
     centerMode: true,
     centerPadding: '60px',
-    slidesToShow: 2,
+    slidesToShow: 3,
     responsive: [
         {
             breakpoint: 768,
@@ -28,9 +23,3 @@ $('.center').slick({
         }
     ]
 });
-
-</script>
-block script
-
-block thanks
-

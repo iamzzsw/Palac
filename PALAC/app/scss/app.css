@@ -1048,6 +1048,12 @@ input[type=submit]:hover {
   background-repeat: no-repeat;
 }
 
+.center {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+
 .container-main .container .images {
   margin: 0;
 }
@@ -1141,6 +1147,42 @@ input[type=submit]:hover {
 .hosts-content figure {
   margin: 0;
   padding-left: 4rem;
+}
+.hosts-content figcaption {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 0.4rem;
+  font-family: "Raleway", sans-serif;
+}
+.hosts-content .more-hosts {
+  position: relative;
+  margin-top: 8rem;
+}
+.hosts-content .more-hosts a {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.036rem;
+  text-decoration: none;
+  border-radius: 8rem;
+  border: 1px solid rgba(240, 194, 53, 0.2);
+  background: rgba(240, 194, 53, 0.4);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  padding: 1rem 2.08rem;
+}
+.hosts-content .more-hosts .hosts-shadow {
+  position: absolute;
+  right: 1rem;
+  top: 0.4rem;
+  width: 30rem;
+  height: 3.5rem;
+  border-radius: 3rem;
+  background: #7B8A6A;
+  filter: blur(12.5px);
 }
 
 .about {

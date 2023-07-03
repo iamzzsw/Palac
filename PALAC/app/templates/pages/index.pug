@@ -34,14 +34,32 @@ block content
         .about-text
           p  Пабудаваны ў мястэчку Нароўля ў Беларусі ў 1850 годзе, на высокім беразе ракі Прыпяць.
           p  Улучаў у сябе парк, капліцу і шэраг малых архітэктурных форм, якія часткова захаваліся і да сёння. 
-        .gallery-container
+        .center
+          .center-slide
+            figure 
+              img(src="../../../../../PALAC/app/resources/palace.png")
+              figcaption 1816
+          .center-slide
+            figure 
+              img(src="../../../../../PALAC/app/resources/fountain.png")
+              figcaption 1832
+          .center-slide
+            figure 
+              img(src="../../../../../PALAC/app/resources/bed.png")
+              figcaption 1914-1918
+          .center-slide
+            figure 
+              img(src="../../../../../PALAC/app/resources/table.png")
+              figcaption 1914-1918
       .hosts(style="background: linear-gradient(180deg, #93A480 0%, rgba(147, 164, 128, 0.5) 50%,  #93A480 100% ), url('../../../../../PALAC/app/resources/hosts.svg'), no-repeat; background-size: cover;") 
         h2 Гаспадары
         .hosts-content 
           .about-text
             p Пачынальнік “нараўлянскай галіны” гісторыі роду Горваттаў ― Дваранін Даніэль Горватт і яго жонка, Іфігенія Ратынская.
             p Далейшая гісторыя іх сям’і, сына і дачкі, таксама цесна звязаная з Нароўляю і палацам.
-            a(href="#") Больш пра гаспадароў і палац
+            .more-hosts
+              .hosts-shadow
+              a(href="#") Больш пра гаспадароў і палац
           figure
             img(src="../../../../../PALAC/app/resources/Gorvatt.png" alt="Першасная расчыстка завалаў. Травень 2021.")
             figcaption Данііл Горватт сядзіць на каменным льве ля прыступак палацу.
@@ -84,4 +102,3 @@ block content
       .footer-nav 
         include ../blocks/socials 
         include ../blocks/navbar_header
-           
