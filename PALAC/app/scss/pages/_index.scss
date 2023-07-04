@@ -1,6 +1,18 @@
 .page-color {
     background: linear-gradient(180deg, $bg-default 40%, $bg-light  40%),$bg-light;
 	background-repeat: no-repeat;
+    &::before {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		content: "";
+		opacity: 0.04;
+		// z-index: 1000;
+		pointer-events: none;
+		background: url(../resources/noise.gif);
+	}
 }
 
 .section-welcome {
