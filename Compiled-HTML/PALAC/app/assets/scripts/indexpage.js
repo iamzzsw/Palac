@@ -2,10 +2,11 @@ $(document).ready(function () {
 
     $('.center').slick({
         centerMode: true,
-        centerPadding: '60px',
         dots: true,
         infinite: false,
-        slidesToShow: 2,
+        variableWidth: true,
+        slidesToShow: 4,
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 768,
