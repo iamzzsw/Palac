@@ -6,6 +6,7 @@ $(document).ready(function () {
         infinite: false,
         variableWidth: true,
         slidesToShow: 3,
+        draggable: false,
         responsive: [
             {
                 breakpoint: 768,

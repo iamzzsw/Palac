@@ -1056,16 +1056,6 @@ input[type=submit]:hover {
   padding-bottom: 10rem;
 }
 
-.slick-track {
-  margin-top: 10rem;
-  display: flex;
-  align-items: flex-end;
-}
-
-.slick-slide {
-  margin: 0 2rem;
-}
-
 .center-slide {
   transition: all 0.3s ease-in-out;
 }
@@ -1145,6 +1135,9 @@ input[type=submit]:hover {
 .slick-current#slick-slide00,
 .slick-current#slick-slide01 {
   scale: 1.6785;
+}
+
+.slick-current#slick-slide01 {
   margin-left: 24rem;
 }
 
@@ -1178,10 +1171,14 @@ input[type=submit]:hover {
 }
 
 .slick-track {
+  margin-top: 10rem;
+  display: flex;
+  align-items: flex-end;
   transition: transform 1s;
 }
 
 .slick-slide {
+  margin: 0 2rem;
   transition: all 0.5s;
 }
 
