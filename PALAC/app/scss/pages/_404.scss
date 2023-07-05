@@ -3,7 +3,7 @@
 	background-repeat: no-repeat;
 	height: 147rem;
 	overflow-x: hidden;
-
+    
 	&::before {
 		position: fixed;
 		top: 0;
@@ -22,7 +22,6 @@
 .page-gradient-help {
 	background: linear-gradient($bg-default 0%, $bg-light 50%), $bg-light;
 	background-repeat: no-repeat;
-
 	&::before {
 		position: fixed;
 		top: 0;
@@ -42,20 +41,19 @@
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
+    max-width: 144rem;
+	margin: auto;
+	padding: 0 1rem;
+	h1 {
 	margin-top: 8.2rem;
-
+	}
 	p {
 		color: #000;
 		font-size: 2rem;
 		font-family: Raleway;
 		line-height: 160%;
 		margin-top: 6rem;
-	}
-
-	.section-title {
-		color: $text-white;
-	}
-    
+	}    
 	.button-help {
 		border-radius: 8rem;
 		border: 1px solid rgba(0, 0, 0, 0.20);
@@ -79,18 +77,9 @@
 }
 
 @media (max-width: $table-screen) {
-	.section-404__button {
-		padding-right: 0;
-		position: static;
-		max-width: inherit;
-		display: flex;
-		justify-content: center;
-		margin-top: 8rem;
-	}
+	
 }
 
 @media (max-width: $mobile-screen) {
-	.section-404__button {
-		margin-top: 4rem;
-	}
+	
 }

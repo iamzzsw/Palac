@@ -26,3 +26,38 @@
         letter-spacing: 0.756rem;
     }
 }
+
+@media (max-width: $table-screen) {
+	.recover-container {
+        height: 43.9rem;
+        .recover {
+            color: rgba(0, 0, 0, 0.60);
+            text-align: center;
+            font-size: 11rem;
+            font-family: Oranienbaum;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.1rem;
+            text-transform: uppercase;
+            padding-top: 13.5rem;
+        }
+    
+        h1 {
+            color: #FFF;
+            text-align: center;
+            font-size: 7rem;
+            font-family: Oranienbaum;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.63rem;
+            text-transform: uppercase;
+            margin-top: 0.7rem;
+        }
+    }
+}
+
+@media (max-width: $mobile-screen) {
+	
+}
