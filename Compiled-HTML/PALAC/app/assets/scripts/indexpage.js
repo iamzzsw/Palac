@@ -5,8 +5,7 @@ $(document).ready(function () {
         dots: true,
         infinite: false,
         variableWidth: true,
-        slidesToShow: 4,
-        adaptiveHeight: true,
+        slidesToShow: 3,
         responsive: [
             {
                 breakpoint: 768,

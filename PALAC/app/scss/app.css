@@ -1057,12 +1057,18 @@ input[type=submit]:hover {
 }
 
 .slick-track {
-  margin-left: -200px;
-  margin-top: 20rem;
+  margin-top: 10rem;
   display: flex;
   align-items: flex-end;
 }
 
+.slick-slide {
+  margin: 0 2rem;
+}
+
+.center-slide {
+  transition: all 0.3s ease-in-out;
+}
 .center-slide figure {
   margin: 0;
   padding: 0;
@@ -1071,7 +1077,7 @@ input[type=submit]:hover {
 .center-slide figure figcaption {
   display: none;
   color: #F8F7F3;
-  font-size: 1.8rem;
+  font-size: 1.0723rem;
   font-family: Raleway;
   font-style: normal;
   font-weight: 400;
@@ -1087,20 +1093,29 @@ input[type=submit]:hover {
   margin-top: 1rem;
   margin-left: 2.6rem;
 }
+.center-slide figure figure img {
+  border-radius: 2rem;
+}
 
+.slick-current {
+  scale: 1.2;
+  transform-origin: bottom right;
+  transition: all 0.5s ease-in-out;
+}
 .slick-current figure {
   margin: 0;
   padding: 0;
   position: relative;
+  max-height: 54rem;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.79%, rgba(0, 0, 0, 0.8) 76.56%);
 }
 .slick-current figure figcaption {
   display: block;
   position: absolute;
-  bottom: 4rem;
-  left: 4rem;
+  bottom: 2.383rem;
+  left: 2.383rem;
   color: #F8F7F3;
-  font-size: 1.8rem;
+  font-size: 1.0723rem;
   font-family: Raleway;
   font-style: normal;
   font-weight: 400;
@@ -1114,8 +1129,8 @@ input[type=submit]:hover {
 .slick-current figure figure figcaption {
   margin: 0;
   position: absolute;
-  bottom: 8.6rem;
-  left: 4rem;
+  bottom: 5.12362rem;
+  left: 2.383rem;
   color: #FFF;
   font-size: 2.4rem;
   font-family: Oranienbaum;
@@ -1123,7 +1138,55 @@ input[type=submit]:hover {
   font-weight: 400;
 }
 
+.slick-current#slick-slide02, .slick-current#slick-slide05 {
+  margin-left: 10rem;
+}
+
+.slick-current#slick-slide00,
+.slick-current#slick-slide01 {
+  scale: 1.6785;
+  margin-left: 24rem;
+}
+
+.slick-current#slick-slide03,
+.slick-current#slick-slide04 {
+  scale: 1.3;
+  margin-left: 12rem;
+}
+
+.slick-current#slick-slide01 figure figcaption {
+  bottom: 2.144rem;
+  left: 2.234rem;
+}
+.slick-current#slick-slide01 figure figure figcaption {
+  margin: 0;
+  position: absolute;
+  bottom: 7.655rem;
+  left: 2.234rem;
+}
+
+.slick-current#slick-slide00 {
+  scale: 2.25;
+}
+
+#slick-slide00 figure figure {
+  width: 320px;
+  height: 240px;
+}
+#slick-slide00 figure figure img {
+  width: 100%;
+}
+
+.slick-track {
+  transition: transform 1s;
+}
+
+.slick-slide {
+  transition: all 0.5s;
+}
+
 .center-quote-dark {
+  padding: 0;
   border-radius: 1.5rem;
   background: #282828;
   width: 30rem;
@@ -1166,6 +1229,7 @@ input[type=submit]:hover {
 }
 
 .center-quote-light {
+  padding: 0;
   border-radius: 1.5rem;
   background: #F8F7F3;
   width: 32rem;
