@@ -8,31 +8,81 @@
   background: #808e6f;
   filter: blur(12.5px);
 }
-.button_help {
-  color: $text-white;
-  text-decoration: none;
-  font-family: $font-default;
-  font-weight: 600;
-  font-size: 1.8rem;
-  letter-spacing: 0.036rem;
-  cursor: pointer;
-  margin-left: 4rem;
-  width: 15rem;
-  height: 4.8rem;
-  border-radius: 80px;
-  border: 1px solid rgba($but-help, 0.2);
-  background: rgba($but-help, 0.5);
-  backdrop-filter: blur(2.5px);
-  text-align: center;
+// .button_help {
+//   color: $text-white;
+//   text-decoration: none;
+//   font-family: $font-default;
+//   font-weight: 600;
+//   font-size: 1.8rem;
+//   letter-spacing: 0.036rem;
+//   cursor: pointer;
+//   margin-left: 4rem;
+//   width: 15rem;
+//   height: 4.8rem;
+//   border-radius: 80px;
+//   border: 1px solid rgba($but-help, 0.2);
+//   background: rgba($but-help, 0.5);
+//   backdrop-filter: blur(2.5px);
+//   text-align: center;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   position: relative;
+//   z-index: 1;
+//   transition: all .4s;
+//   &:hover {
+//     border: 1px solid rgba($text-hover, 0.20);
+//     background: rgba($text-hover, 0.40);
+//   }
+
+// }
+
+.socials-container-help {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  transition: all .4s;
-  &:hover {
-    border: 1px solid rgba($text-hover, 0.20);
-    background: rgba($text-hover, 0.40);
+  a {
+      margin: 0;
+      padding: 0;
+      color: $text-white;
+      text-decoration: none;
+      font-family: $font-default;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 2.8rem;
+      cursor: pointer;
+      width: 15rem;
+      height: 4.8rem;
+      border-radius: 80px;
+      backdrop-filter: blur(2.5px);
+      line-height: 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .4s;
+
+      &:hover {
+          border: 1px solid rgba($text-hover, 0.20);
+          background: rgba($text-hover, 0.40);
+
+      }
   }
+
+  .social-block {
+      position: relative;
+  }
+  
+  .block-help {
+      margin-left: 2rem;
+  }
+
+  .block-shadow {
+      background: rgba(90, 44, 72, 0.70);
+  }
+
+  .help {
+    border: 1px solid rgba($but-help, 0.2);
+    background: rgba($but-help, 0.5);
+  }
+
 
 }
