@@ -2,7 +2,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 82.3rem;
+    position: relative;
+    
 
     .recover {
         color: rgba(0, 0, 0, 0.60);
@@ -24,40 +25,42 @@
         font-size: 8.4rem;
         line-height: 17rem;
         letter-spacing: 0.756rem;
+        padding-bottom: 9.8rem;
     }
 }
 
 @media (max-width: $table-screen) {
 	.recover-container {
-        height: 43.9rem;
         .recover {
-            color: rgba(0, 0, 0, 0.60);
-            text-align: center;
             font-size: 11rem;
-            font-family: Oranienbaum;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
             letter-spacing: 1.1rem;
-            text-transform: uppercase;
             padding-top: 13.5rem;
+            line-height: normal;
         }
     
         h1 {
-            color: #FFF;
-            text-align: center;
             font-size: 7rem;
-            font-family: Oranienbaum;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
             letter-spacing: 0.63rem;
-            text-transform: uppercase;
             margin-top: 0.7rem;
+            line-height: normal;
+            padding-bottom: 8.9rem;
         }
     }
 }
 
 @media (max-width: $mobile-screen) {
-	
+	.recover-container {
+        .recover {
+            font-size: 4.4rem;
+            letter-spacing: 0.88rem;
+            padding-top: 4rem;
+        }
+    
+        h1 {
+            font-size: 2.8rem;
+            letter-spacing: 0.252rem;
+            margin-top: 0.6rem;
+            padding-bottom: 5.1rem;
+        }
+    }
 }
