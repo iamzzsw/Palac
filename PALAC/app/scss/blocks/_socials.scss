@@ -54,3 +54,11 @@
         background: rgba($but-fb, 0.7);
     }
 }
+
+@media (max-width: $mobile-screen) {
+    .socials-container {
+        a {
+            width: 13.5rem;
+        }
+    }
+}

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     margin-top: 8rem;
+    padding: 0 1rem;
     padding-bottom: 17.6rem;
 }
 
@@ -133,6 +134,91 @@ input[type="submit"] {
             .shadow-help-work {
                 background: rgba(175, 146, 58, 0.80);
                 width: 17.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: $table-screen) {
+	.donate-container {
+        flex-wrap: wrap;
+        padding-bottom: 11rem;
+        .help-money {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            .form-block-help {
+                form {
+                    .block-shadow-help {
+                        align-self: center;
+                    }                 
+                }
+            }
+        }
+        .help-work {
+            margin-top: 6rem;
+            .form-block-work {
+                form {
+                    .block-shadow-work {
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-screen) {
+	.donate-container {
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+        padding: 0 1.5rem;
+        .help-money {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+
+            .form-block-help {
+                width: 100%;
+                height: 20.8rem;
+                margin-top: 2rem;
+        
+                form {
+                    margin: 0 2rem;
+               
+                    input[type="text"] {
+                        width: 20rem;
+                    }
+                    span {
+                        margin: 0;
+                    }   
+                }
+            }
+        }
+        .help-work {
+            margin: auto;
+            margin-top: 4rem;
+            
+            h4 {
+                text-align: center;
+
+            }
+            .form-block-work {
+                margin-top: 2.4rem;
+                form {
+                    margin-top: 2rem;
+                    input[type="text"],
+                    input[type="tel"] {
+                        margin-top: 3.2rem;
+                        border-bottom: 0.1rem solid #000;
+                        width: 25rem;
+                    }
+                    input[id="name"] {
+                        margin-top: 0rem;
+                    }                    
+                }
             }
         }
     }
