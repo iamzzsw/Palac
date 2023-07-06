@@ -1,3 +1,19 @@
+.page-noise {
+    background: linear-gradient(180deg, $bg-default 60%, $bg-light 60%), $bg-light;
+    background-repeat: no-repeat;
+    &::before {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		content: "";
+		opacity: 0.04;
+		// z-index: 1000;
+		pointer-events: none;
+		background: url(../resources/noise.gif);
+	}
+}
 .error_container {
     width: 100%;
     background: $bg-default;
@@ -45,5 +61,34 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: $table-screen){
+    .error_container {
+        .section-error {
+            h1 {
+                padding: 0 2rem;
+            }
+            .recover {
+                top: 9rem;
+                padding: 0 2rem;
+            }            
+        }
+    }
+}
+
+@media (max-width: $mobile-screen){
+    .error_container {
+        .section-error {
+            h1{
+                line-height: 9rem;  
+            }
+            .recover {
+                top: 15rem;
+                font-size: 9rem;
+                line-height: 11rem;
+            }            
+        }
     }
 }

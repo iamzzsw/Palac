@@ -36,3 +36,14 @@
         }
     }
 }
+
+@media(max-width: $mobile-screen) {
+    .navbar_container{
+        // clip-path: inset( -100vw -100vw -100vw 0 );
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+
+}

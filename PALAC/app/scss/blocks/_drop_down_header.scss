@@ -22,6 +22,11 @@
             width: 4.8rem;
             cursor: pointer;
           }
+          .icon-close-navbar {
+            display: none;
+            width: 3.2rem;
+            cursor: pointer;
+          }
         .logo {
             font-family: $font-primary;
             font-size: 2.8rem;
@@ -69,6 +74,14 @@
                 position: absolute;
                 right: 4.8rem;
                 top: 3.2rem;
+                z-index: 1000;
+              }
+              .icon-close-navbar {
+                display: none;
+                height: 3.2rem;
+                position: absolute;
+                right: 5.5rem;
+                top: 2.2rem;
                 z-index: 1000;
               }
             .button_help_header{
