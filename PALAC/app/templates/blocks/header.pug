@@ -1,11 +1,42 @@
 .layout-header
   .container
     p.logo ГОРВАРТС
-    .layout-header__right
-      a(href="reival.html").active
-        | Па-беларуску
-      svg.icon.icon-separator
-        use(xlink:href="#icon-separator")
-      a(href="#")
-        | In english
+    .layout-header_right_elements
+      .languages
+        a(href="revival.html").active
+          | Па-беларуску
+        svg.icon.icon-separator
+          use(xlink:href="#icon-separator")
+        a(href="#")
+          | In english
       include button_help
+    .layout-header__right.menu
+      .languages
+        a(href="revival.html").active
+          | Па-беларуску
+        svg.icon.icon-separator
+          use(xlink:href="#icon-separator")
+        a(href="#")
+          | In english
+      .navbar_container 
+            .list  
+                .list-item 
+                    a(href="index.html") Палац і гаспадары
+                svg.icon-separator
+                    use(xlink:href="#icon-separator")
+                .list-item
+                    a адраджэнне
+                svg.icon-separator
+                    use(xlink:href="#icon-separator")
+                .list-item 
+                    a дапамога
+      include button_help
+      .socials-container 
+        .social-block.block-inst
+          .shadow.inst-shadow
+          a(href="#").inst Instagram
+        .social-block
+          .shadow.facebook-shadow 
+          a(href="#").facebook Facebook
+    svg.icon-burger
+      use(xlink:href="#icon-burger")
