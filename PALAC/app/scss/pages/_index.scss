@@ -335,6 +335,7 @@
 }
 
 .section-welcome {
+    max-width: 144rem;
     .recover {
         color: rgba($text-black, 0.15);
         margin: 0;
@@ -391,16 +392,15 @@
     display: flex;
     width: 100%;
     background: no-repeat;
-    background-position: right;
     flex-direction: column;
     align-items: center;
-    margin-top: -21.7rem;
-    padding-top: 41.61rem;
-
+    background-position: right -21.7rem;
+    h2 {
+        margin-top: 19.91rem;
+    }
     .about-text {
         margin-right: 40rem;
         margin-top: 6rem;
-        padding-bottom: 40rem;
     }
 }
 
@@ -608,4 +608,84 @@
             }
         }
     }
+}
+
+@media (max-width: $table-screen) {
+	.section-welcome {
+        figure {
+            right: 0;
+            top: 10rem;
+        }
+
+        .recover {
+            font-size: 11rem;
+            letter-spacing: 2.2rem;
+            line-height: 17rem;
+            margin-top: 24.9rem;
+        }
+    
+        h1 {
+            position: relative;
+            font-size: 7rem;
+            letter-spacing: 0.63rem;
+            line-height: 17rem;
+            margin: 0;
+            margin-top: -5.8rem;
+          
+        }
+        .nav-div {
+            display: none;
+        }
+    }
+    .about {
+        margin-top: 45rem;
+    }
+
+    .container-main {
+        .container {
+            .images {
+                display: flex;
+                flex-wrap: wrap;
+               img {
+                width: 50%;
+               }
+            }
+        }
+    }
+    .map {
+        background-position: 60% -27.2rem;
+
+        h2 {
+            margin-top: 11rem;
+        }
+    }
+
+    .hosts {
+        margin-top: 6.7rem;
+    }
+
+    .slick-dots {
+        width: 53.2rem;
+        left: 4rem;
+        li {
+            width: 8.7rem;
+            button {
+                width: 8.7rem;
+                &::before {
+                    width: 8.7rem;
+                }
+            }
+        }
+    }
+    .slick-next {
+        right: 4rem;
+    }
+    .slick-prev {
+        left: auto;
+        right: 10.8rem;
+    }
+}
+
+@media (max-width: $mobile-screen) {
+	
 }

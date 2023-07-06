@@ -1440,6 +1440,9 @@ input[type=submit]:hover {
   color: #000;
 }
 
+.section-welcome {
+  max-width: 144rem;
+}
 .section-welcome .recover {
   color: rgba(0, 0, 0, 0.15);
   margin: 0;
@@ -1490,16 +1493,16 @@ input[type=submit]:hover {
   display: flex;
   width: 100%;
   background: no-repeat;
-  background-position: right;
   flex-direction: column;
   align-items: center;
-  margin-top: -21.7rem;
-  padding-top: 41.61rem;
+  background-position: right -21.7rem;
+}
+.map h2 {
+  margin-top: 19.91rem;
 }
 .map .about-text {
   margin-right: 40rem;
   margin-top: 6rem;
-  padding-bottom: 40rem;
 }
 
 .hosts {
@@ -1684,6 +1687,68 @@ input[type=submit]:hover {
   left: 0;
 }
 
+@media (max-width: 1023px) {
+  .section-welcome figure {
+    right: 0;
+    top: 10rem;
+  }
+  .section-welcome .recover {
+    font-size: 11rem;
+    letter-spacing: 2.2rem;
+    line-height: 17rem;
+    margin-top: 24.9rem;
+  }
+  .section-welcome h1 {
+    position: relative;
+    font-size: 7rem;
+    letter-spacing: 0.63rem;
+    line-height: 17rem;
+    margin: 0;
+    margin-top: -5.8rem;
+  }
+  .section-welcome .nav-div {
+    display: none;
+  }
+  .about {
+    margin-top: 45rem;
+  }
+  .container-main .container .images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-main .container .images img {
+    width: 50%;
+  }
+  .map {
+    background-position: 60% -27.2rem;
+  }
+  .map h2 {
+    margin-top: 11rem;
+  }
+  .hosts {
+    margin-top: 6.7rem;
+  }
+  .slick-dots {
+    width: 53.2rem;
+    left: 4rem;
+  }
+  .slick-dots li {
+    width: 8.7rem;
+  }
+  .slick-dots li button {
+    width: 8.7rem;
+  }
+  .slick-dots li button::before {
+    width: 8.7rem;
+  }
+  .slick-next {
+    right: 4rem;
+  }
+  .slick-prev {
+    left: auto;
+    right: 10.8rem;
+  }
+}
 .revival_navbar {
   max-width: 134.4rem;
   margin: 4.6rem auto;

@@ -9,12 +9,11 @@ $(document).ready(function () {
         draggable: false,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 1023,
                 settings: {
-                    arrows: false,
+                    arrows: true,
                     centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
+                    slidesToShow: 2
                 }
             },
             {
@@ -22,7 +21,6 @@ $(document).ready(function () {
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
                     slidesToShow: 1
                 }
             }
