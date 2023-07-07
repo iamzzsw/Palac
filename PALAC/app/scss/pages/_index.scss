@@ -1,7 +1,19 @@
 .page-color {
-
-    background: linear-gradient(180deg, $bg-default 60%, $bg-light 60%), $bg-light;
+    background: linear-gradient(180deg, $bg-default 55%, $bg-light 55%), $bg-light;
     background-repeat: no-repeat;
+    
+    &::before {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        content: "";
+        opacity: 0.04;
+        // z-index: 1000;
+        pointer-events: none;
+        background: url(../resources/noise.gif);
+    }
 }
 
 .center {
@@ -97,7 +109,8 @@
     }
 }
 
-.slick-current#slick-slide02, .slick-current#slick-slide05 {
+.slick-current#slick-slide02,
+.slick-current#slick-slide05 {
     margin-left: 10rem;
 }
 
@@ -333,25 +346,14 @@
     .help-article {
         color: $text-black;
     }
-    background: linear-gradient(180deg, $bg-default 40%, $bg-light  40%),$bg-light;
-	background-repeat: no-repeat;
-    &::before {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		content: "";
-		opacity: 0.04;
-		// z-index: 1000;
-		pointer-events: none;
-		background: url(../resources/noise.gif);
-	}
 
 }
 
 .section-welcome {
     max-width: 144rem;
+    margin: auto;
+    position: relative;
+
     .recover {
         color: rgba($text-black, 0.15);
         margin: 0;
@@ -377,7 +379,7 @@
     figure {
         position: absolute;
         left: 24.1rem;
-        top: 3.5rem;
+        top: -23rem;
         z-index: 0;
     }
 
@@ -411,9 +413,11 @@
     flex-direction: column;
     align-items: center;
     background-position: right -21.7rem;
+
     h2 {
         margin-top: 19.91rem;
     }
+
     .about-text {
         margin-right: 40rem;
         margin-top: 6rem;
@@ -427,19 +431,26 @@
 .hosts-content {
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-items: center;
     margin: auto;
+    padding: 0 1.5rem;
     padding-bottom: 11.8rem;
     margin-top: 3.1rem;
-
-    .about-text {
-        margin-left: 22rem;
-        padding-right: 4rem;
-    }
 
     figure {
         margin: 0;
         padding-left: 4rem;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .about-text {
+        min-width: 32rem;
     }
 
     figcaption {
@@ -593,6 +604,7 @@
                     margin-top: 6.5rem;
 
                     p {
+                        font-family: $font-default;
                         padding: 0;
                         font-size: 1.6rem;
                         opacity: 0.5;
@@ -602,15 +614,16 @@
 
                     blockquote {
                         color: $text-black;
-                        font-family: $font-quote;
                         font-style: italic;
                         margin: 0;
                         padding-left: 3.4rem;
                         position: relative;
+                        margin-top: 4rem;
 
                         p {
                             font-size: 2rem;
                             opacity: 1;
+                            font-family: $font-quote;
                         }
 
                         &::before {
@@ -627,10 +640,12 @@
 }
 
 @media (max-width: $table-screen) {
-	.section-welcome {
+    .section-welcome {
         figure {
+            left: auto;
             right: 0;
-            top: 10rem;
+            margin: 0;
+            padding: 0;
         }
 
         .recover {
@@ -639,7 +654,7 @@
             line-height: 17rem;
             margin-top: 24.9rem;
         }
-    
+
         h1 {
             position: relative;
             font-size: 7rem;
@@ -647,12 +662,14 @@
             line-height: 17rem;
             margin: 0;
             margin-top: -5.8rem;
-          
+
         }
+
         .nav-div {
             display: none;
         }
     }
+
     .about {
         margin-top: 45rem;
     }
@@ -662,12 +679,14 @@
             .images {
                 display: flex;
                 flex-wrap: wrap;
-               img {
-                width: 50%;
-               }
+
+                img {
+                    width: 50%;
+                }
             }
         }
     }
+
     .map {
         background-position: 60% -27.2rem;
 
@@ -680,28 +699,112 @@
         margin-top: 6.7rem;
     }
 
+    .hosts-content {
+        figure {
+            width: 34.4rem;
+            padding-left: 2rem;
+        }
+
+        .about-text {
+            margin-right: 2rem;
+        }
+    }
+
     .slick-dots {
         width: 53.2rem;
         left: 4rem;
+
         li {
             width: 8.7rem;
+
             button {
                 width: 8.7rem;
+
                 &::before {
                     width: 8.7rem;
                 }
             }
         }
     }
+    
+    .slick-current#slick-slide00 {
+        scale: (2.09);
+    }
+    .slick-track {
+        margin-left: 14rem;
+    }
     .slick-next {
         right: 4rem;
     }
+
     .slick-prev {
         left: auto;
         right: 10.8rem;
     }
+    
+    
+
+
+    .revival-block {
+        margin-bottom: 84.13rem;
+        h2 {
+            padding: 0;
+            margin-top: 26.1rem;
+            margin-bottom: 3.97rem;
+            font-size: 8.4rem;
+            letter-spacing: 0.756rem;
+        }
+
+        .about-text {
+            position: absolute;
+            margin: 0;
+            padding: 0 2rem;
+            bottom: -23.23rem;
+            left: 2rem;
+            max-width: 100%;
+
+            p {
+                color: $text-black;
+            }
+        }
+
+        .gallery-block {
+            margin: 0;
+            bottom: -75.2rem;
+            left: 2rem;
+
+            &::-webkit-scrollbar {
+                width: 100%;
+                height: 2px;
+            }
+ 
+            &::-webkit-scrollbar-track {
+                background: rgba(0, 0, 0, 0.15);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #000;
+            }
+
+            .participants {
+                margin-left: 0;
+                margin-right: 4rem;
+                min-width: 68.8rem;
+                margin-bottom: 2rem;
+                .participants_item {
+
+                    .info {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .footer-nav {
+        .navbar_container {
+            display: none;
+        }
+    }
 }
 
-@media (max-width: $mobile-screen) {
-	
-}
+@media (max-width: $mobile-screen) {}

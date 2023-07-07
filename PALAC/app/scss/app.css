@@ -1087,6 +1087,7 @@ input[type=submit]:hover {
   .donate-container {
     flex-wrap: wrap;
     padding-bottom: 11rem;
+    margin-top: 6rem;
   }
   .donate-container .help-money {
     display: flex;
@@ -1094,11 +1095,29 @@ input[type=submit]:hover {
     align-items: center;
     margin: 0;
   }
+  .donate-container .help-money h4 {
+    font-weight: 700;
+  }
   .donate-container .help-money .form-block-help form .block-shadow-help {
     align-self: center;
   }
   .donate-container .help-work {
     margin-top: 6rem;
+  }
+  .donate-container .help-work h2 {
+    font-weight: 700;
+  }
+  .donate-container .help-work .form-block-work form {
+    margin-top: 2.4rem;
+  }
+  .donate-container .help-work .form-block-work form input[type=text],
+  .donate-container .help-work .form-block-work form input[type=tel] {
+    margin-top: 4.8rem;
+    width: 38rem;
+  }
+  .donate-container .help-work .form-block-work form input[id=name] {
+    margin-top: 0rem;
+    width: 38rem;
   }
   .donate-container .help-work .form-block-work form .block-shadow-work {
     align-self: center;
@@ -1158,6 +1177,17 @@ input[type=submit]:hover {
   background-size: cover;
   width: 100%;
   position: relative;
+}
+.recover-container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.04;
+  pointer-events: none;
+  background: url(../resources/noise.gif);
 }
 .recover-container .recover {
   color: rgba(0, 0, 0, 0.6);
@@ -1335,8 +1365,19 @@ input[type=submit]:hover {
   }
 }
 .page-color {
-  background: linear-gradient(180deg, #93A480 60%, #F8F7F3 60%), #F8F7F3;
+  background: linear-gradient(180deg, #93A480 55%, #F8F7F3 55%), #F8F7F3;
   background-repeat: no-repeat;
+}
+.page-color::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.04;
+  pointer-events: none;
+  background: url(../resources/noise.gif);
 }
 
 .center {
@@ -1419,7 +1460,8 @@ input[type=submit]:hover {
   font-weight: 400;
 }
 
-.slick-current#slick-slide02, .slick-current#slick-slide05 {
+.slick-current#slick-slide02,
+.slick-current#slick-slide05 {
   margin-left: 10rem;
 }
 
@@ -1614,10 +1656,6 @@ input[type=submit]:hover {
   background: #fff;
 }
 
-.container-main {
-  background: linear-gradient(180deg, #93A480 40%, #F8F7F3 40%), #F8F7F3;
-  background-repeat: no-repeat;
-}
 .container-main .container .images {
   margin: 0;
 }
@@ -1629,20 +1667,11 @@ input[type=submit]:hover {
 .container-main .help-article {
   color: #000;
 }
-.container-main::before {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  content: "";
-  opacity: 0.04;
-  pointer-events: none;
-  background: url(../resources/noise.gif);
-}
 
 .section-welcome {
   max-width: 144rem;
+  margin: auto;
+  position: relative;
 }
 .section-welcome .recover {
   color: rgba(0, 0, 0, 0.15);
@@ -1667,7 +1696,7 @@ input[type=submit]:hover {
 .section-welcome figure {
   position: absolute;
   left: 24.1rem;
-  top: 3.5rem;
+  top: -23rem;
   z-index: 0;
 }
 .section-welcome .nav-div {
@@ -1713,18 +1742,24 @@ input[type=submit]:hover {
 .hosts-content {
   display: flex;
   justify-content: center;
+  justify-items: center;
   align-items: center;
   margin: auto;
+  padding: 0 1.5rem;
   padding-bottom: 11.8rem;
   margin-top: 3.1rem;
-}
-.hosts-content .about-text {
-  margin-left: 22rem;
-  padding-right: 4rem;
 }
 .hosts-content figure {
   margin: 0;
   padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.hosts-content figure img {
+  width: 100%;
+}
+.hosts-content .about-text {
+  min-width: 32rem;
 }
 .hosts-content figcaption {
   font-size: 1.6rem;
@@ -1863,6 +1898,7 @@ input[type=submit]:hover {
   margin-top: 6.5rem;
 }
 .revival-block .gallery-block .participants .participants_item .info p {
+  font-family: "Raleway", sans-serif;
   padding: 0;
   font-size: 1.6rem;
   opacity: 0.5;
@@ -1871,15 +1907,16 @@ input[type=submit]:hover {
 }
 .revival-block .gallery-block .participants .participants_item .info blockquote {
   color: #000;
-  font-family: "Noto Serif", serif;
   font-style: italic;
   margin: 0;
   padding-left: 3.4rem;
   position: relative;
+  margin-top: 4rem;
 }
 .revival-block .gallery-block .participants .participants_item .info blockquote p {
   font-size: 2rem;
   opacity: 1;
+  font-family: "Noto Serif", serif;
 }
 .revival-block .gallery-block .participants .participants_item .info blockquote::before {
   content: url("../resources/commos.png");
@@ -1890,8 +1927,10 @@ input[type=submit]:hover {
 
 @media (max-width: 1023px) {
   .section-welcome figure {
+    left: auto;
     right: 0;
-    top: 10rem;
+    margin: 0;
+    padding: 0;
   }
   .section-welcome .recover {
     font-size: 11rem;
@@ -1929,6 +1968,13 @@ input[type=submit]:hover {
   .hosts {
     margin-top: 6.7rem;
   }
+  .hosts-content figure {
+    width: 34.4rem;
+    padding-left: 2rem;
+  }
+  .hosts-content .about-text {
+    margin-right: 2rem;
+  }
   .slick-dots {
     width: 53.2rem;
     left: 4rem;
@@ -1942,12 +1988,66 @@ input[type=submit]:hover {
   .slick-dots li button::before {
     width: 8.7rem;
   }
+  .slick-current#slick-slide00 {
+    scale: 2.09;
+  }
+  .slick-track {
+    margin-left: 14rem;
+  }
   .slick-next {
     right: 4rem;
   }
   .slick-prev {
     left: auto;
     right: 10.8rem;
+  }
+  .revival-block {
+    margin-bottom: 84.13rem;
+  }
+  .revival-block h2 {
+    padding: 0;
+    margin-top: 26.1rem;
+    margin-bottom: 3.97rem;
+    font-size: 8.4rem;
+    letter-spacing: 0.756rem;
+  }
+  .revival-block .about-text {
+    position: absolute;
+    margin: 0;
+    padding: 0 2rem;
+    bottom: -23.23rem;
+    left: 2rem;
+    max-width: 100%;
+  }
+  .revival-block .about-text p {
+    color: #000;
+  }
+  .revival-block .gallery-block {
+    margin: 0;
+    bottom: -75.2rem;
+    left: 2rem;
+  }
+  .revival-block .gallery-block::-webkit-scrollbar {
+    width: 100%;
+    height: 2px;
+  }
+  .revival-block .gallery-block::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  .revival-block .gallery-block::-webkit-scrollbar-thumb {
+    background-color: #000;
+  }
+  .revival-block .gallery-block .participants {
+    margin-left: 0;
+    margin-right: 4rem;
+    min-width: 68.8rem;
+    margin-bottom: 2rem;
+  }
+  .revival-block .gallery-block .participants .participants_item .info {
+    margin: 0;
+  }
+  .footer-nav .navbar_container {
+    display: none;
   }
 }
 .revival_navbar {

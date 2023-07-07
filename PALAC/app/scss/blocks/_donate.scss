@@ -143,11 +143,15 @@ input[type="submit"] {
 	.donate-container {
         flex-wrap: wrap;
         padding-bottom: 11rem;
+        margin-top: 6rem;
         .help-money {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0;
+            h4 {
+                font-weight: 700;
+            }
             .form-block-help {
                 form {
                     .block-shadow-help {
@@ -158,11 +162,25 @@ input[type="submit"] {
         }
         .help-work {
             margin-top: 6rem;
+            h2 {
+                font-weight: 700;
+            }
             .form-block-work {
                 form {
+                    margin-top: 2.4rem;
+                    input[type="text"],
+                    input[type="tel"] {
+                        margin-top: 4.8rem;
+                        width: 38rem;
+                    }
+                    input[id="name"] {
+                        margin-top: 0rem;
+                        width: 38rem;
+                    }                    
                     .block-shadow-work {
                         align-self: center;
                     }
+                    
                 }
             }
         }
