@@ -1,7 +1,7 @@
 .page-color {
     background: linear-gradient(180deg, $bg-default 55%, $bg-light 55%), $bg-light;
     background-repeat: no-repeat;
-    
+
     &::before {
         position: fixed;
         top: 0;
@@ -483,7 +483,7 @@
         .hosts-shadow {
             position: absolute;
             right: 1rem;
-            top: 0.4rem;
+            top: 1.7rem;
             width: 30rem;
             height: 3.5rem;
             border-radius: 3rem;
@@ -726,13 +726,15 @@
             }
         }
     }
-    
+
     .slick-current#slick-slide00 {
         scale: (2.09);
     }
+
     .slick-track {
         margin-left: 14rem;
     }
+
     .slick-next {
         right: 4rem;
     }
@@ -741,12 +743,13 @@
         left: auto;
         right: 10.8rem;
     }
-    
-    
+
+
 
 
     .revival-block {
         margin-bottom: 84.13rem;
+
         h2 {
             padding: 0;
             margin-top: 26.1rem;
@@ -777,7 +780,7 @@
                 width: 100%;
                 height: 2px;
             }
- 
+
             &::-webkit-scrollbar-track {
                 background: rgba(0, 0, 0, 0.15);
             }
@@ -791,6 +794,7 @@
                 margin-right: 4rem;
                 min-width: 68.8rem;
                 margin-bottom: 2rem;
+
                 .participants_item {
 
                     .info {
@@ -800,6 +804,7 @@
             }
         }
     }
+
     .footer-nav {
         .navbar_container {
             display: none;
@@ -807,4 +812,397 @@
     }
 }
 
-@media (max-width: $mobile-screen) {}
+@media (max-width: $mobile-screen) {
+    .section-welcome {
+        figure {
+            overflow: hidden;
+            top: -10.5rem;
+            left: 25%;
+
+            img {
+                width: 31.5rem;
+            }
+        }
+
+        .recover {
+            padding: 0;
+            margin: 0;
+            font-size: 4.4rem;
+            letter-spacing: 0.88rem;
+            line-height: normal;
+            margin-top: 12.5rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            letter-spacing: 0.252rem;
+            line-height: normal;
+            margin-top: 0.6rem;
+        }
+    }
+
+    .about {
+        margin-top: 31rem;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+
+        .about-text {
+            width: 100%;
+            max-width: none;
+            margin: 0;
+
+            p {
+                padding: 0 1.5rem;
+                font-size: 1.8rem;
+                line-height: 144%;
+            }
+        }
+
+        .follow {
+            margin: 0;
+            margin-top: 1rem;
+            padding: 1.5rem;
+
+            .socials-container {
+                justify-content: center;
+            }
+
+            .follow-text {
+                padding: 0;
+                font-size: 2.2rem;
+            }
+
+            .hashtags {
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .map {
+        background-position: 60% 0;
+
+        h2 {
+            margin-top: 8rem;
+            font-size: 2.8rem;
+            letter-spacing: 0.252rem;
+            line-height: normal;
+        }
+
+        .about-text {
+            width: 100%;
+            max-width: none;
+            margin: 1rem 0 17.9rem;
+
+            p {
+                padding: 0 1.5rem;
+                font-size: 1.8rem;
+                line-height: 144%;
+            }
+        }
+    }
+
+    .center-slide figure figure img {
+        border-radius: 1.2rem;
+    }
+
+    #slick-slide00 {
+        figure {
+            figure {
+                width: 20.29rem;
+                height: 15.2rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #slick-slide01 {
+        figure {
+            figure {
+                width: 15.2rem;
+                height: 15.2rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #slick-slide03,
+    #slick-slide04 {
+        figure {
+            figure {
+                width: 20rem;
+                height: 28.2rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .slick-current#slick-slide00 {
+        scale: 1.34
+    }
+
+    .slick-current#slick-slide01 {
+        margin-left: 8rem;
+        scale: 1.5;
+    }
+
+    .center-quote-dark {
+        border-radius: 1.2rem;
+        width: 20rem;
+        height: 28.2rem;
+        padding: 1.5rem;
+
+        p {
+            padding: 0;
+            margin: 6rem 0 2.89rem 0;
+            font-size: 1.6rem;
+            line-height: 130%;
+        }
+
+        blockquote {
+            position: relative;
+            padding: 0;
+            margin: 0;
+
+            p {
+                font-size: 1.6rem;
+                padding-left: 3.5rem;
+                margin: 0;
+                margin-top: 2rem;
+                line-height: normal;
+            }
+        }
+    }
+
+    .center-quote-light {
+        border-radius: 1.2rem;
+        width: 20rem;
+        height: 28.2rem;
+        padding: 1.5rem;
+
+        p {
+            margin: 0;
+            font-size: 1.6rem;
+            line-height: 150%;
+            width: 100%;
+        }
+
+        blockquote {
+            margin: 0;
+            padding: 0;
+            margin-top: 2rem;
+
+            p {
+                margin: 0;
+                font-size: 1.8rem;
+                padding-left: 1.6rem;
+                line-height: 130%;
+            }
+        }
+    }
+
+    .slick-current#slick-slide02,
+    .slick-current#slick-slide05 {
+        scale: 1.2;
+        margin-left: 8rem;
+    }
+
+    .slick-current#slick-slide03,
+    .slick-current#slick-slide04 {
+        margin-left: 8rem;
+    }
+
+    .slick-slide {
+        margin: 0 0.9rem;
+    }
+
+    .slick-track {
+        margin-left: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .center {
+        padding-bottom: 0;
+    }
+
+    .map {
+        padding-bottom: 7rem;
+    }
+
+    .slick-next {
+        top: 115%;
+        right: 25%;
+    }
+
+    .slick-prev {
+        left: auto;
+        top: 115%;
+        left: 25%;
+    }
+
+    .slick-dots {
+        width: 26rem;
+
+        li {
+            width: 4.33rem;
+
+            button {
+                width: 4.33rem;
+
+                &::before {
+                    width: 4.33rem;
+                }
+            }
+        }
+    }
+
+    .hosts {
+        position: relative;
+        margin-bottom: 67.37rem;
+
+        h2 {
+            font-size: 2.8rem;
+            line-height: normal;
+            letter-spacing: 0.252rem;
+            padding: 6rem 0 6.81rem;
+        }
+
+        .hosts-content {
+            flex-wrap: wrap;
+            position: absolute;
+            top: 8rem;
+            left: 0;
+
+            figure {
+                justify-content: center;
+                align-items: center;
+                margin-top: 4rem;
+                padding: 0;
+                width: 100%;
+
+                img {
+                    width: 28rem;
+                }
+            }
+
+            .about-text {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-width: none;
+                min-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    padding: 0;
+                    font-size: 1.8rem;
+                    line-height: 144%;
+                }
+
+                .more-hosts {
+                    position: absolute;
+                    top: 90%;
+                    margin: 0;
+                    padding: 0;
+
+                    a {
+                        margin: 0;
+                        display: flex;
+                        width: 24rem;
+                        line-height: normal;
+                        padding: 1.5rem 2.3rem;
+                    }
+
+                    .hosts-shadow {
+
+                        width: 27rem;
+                        height: 5.9rem;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .revival-block {
+        margin-bottom: 115.13rem;
+
+        h2 {
+            font-size: 4.4rem;
+            line-height: normal;
+            letter-spacing: 0.396rem;
+            margin-top: 10.72rem;
+            margin-bottom: 2rem;
+        }
+
+        .about-text {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: none;
+            bottom: -27rem;
+            left: 0;
+
+            p {
+                padding: 0 1.5rem;
+                font-size: 1.8rem;
+                line-height: 144%;
+            }
+        }
+
+        .gallery-block {
+            bottom: -105.2rem;
+            display: flex;
+            .participants {
+                padding: 0 1.5rem;
+                min-width:auto;
+                .participants_item {
+                    figure {
+                        position: relative;
+
+                        img {
+                         min-width: 13.5rem;
+                        }
+                    }
+
+                    .hide {
+                        display: block;
+                        padding: 1.2rem 0 0 4rem;
+                    }
+
+                    .info {
+                        padding: 1.2rem 0 0 0;
+                        grid-column: 1 / 3;
+                        h4 {
+                            display: none;
+                        }
+
+                        p {
+                            padding: 0;
+                            font-size: 1.6rem;
+                            opacity: 0.5;
+                            line-height: 160%;
+                            margin-top: 2rem;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .page-color {
+        background: linear-gradient(180deg, $bg-default 56%, $bg-light 56%), $bg-light;
+    }
+}

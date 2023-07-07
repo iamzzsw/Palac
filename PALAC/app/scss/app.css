@@ -1790,7 +1790,7 @@ input[type=submit]:hover {
 .hosts-content .more-hosts .hosts-shadow {
   position: absolute;
   right: 1rem;
-  top: 0.4rem;
+  top: 1.7rem;
   width: 30rem;
   height: 3.5rem;
   border-radius: 3rem;
@@ -2048,6 +2048,319 @@ input[type=submit]:hover {
   }
   .footer-nav .navbar_container {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .section-welcome figure {
+    overflow: hidden;
+    top: -10.5rem;
+    left: 25%;
+  }
+  .section-welcome figure img {
+    width: 31.5rem;
+  }
+  .section-welcome .recover {
+    padding: 0;
+    margin: 0;
+    font-size: 4.4rem;
+    letter-spacing: 0.88rem;
+    line-height: normal;
+    margin-top: 12.5rem;
+  }
+  .section-welcome h1 {
+    font-size: 2.8rem;
+    letter-spacing: 0.252rem;
+    line-height: normal;
+    margin-top: 0.6rem;
+  }
+  .about {
+    margin-top: 31rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+  }
+  .about .about-text {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+  .about .about-text p {
+    padding: 0 1.5rem;
+    font-size: 1.8rem;
+    line-height: 144%;
+  }
+  .about .follow {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 1.5rem;
+  }
+  .about .follow .socials-container {
+    justify-content: center;
+  }
+  .about .follow .follow-text {
+    padding: 0;
+    font-size: 2.2rem;
+  }
+  .about .follow .hashtags {
+    padding: 0;
+    width: 100%;
+  }
+  .map {
+    background-position: 60% 0;
+  }
+  .map h2 {
+    margin-top: 8rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.252rem;
+    line-height: normal;
+  }
+  .map .about-text {
+    width: 100%;
+    max-width: none;
+    margin: 1rem 0 17.9rem;
+  }
+  .map .about-text p {
+    padding: 0 1.5rem;
+    font-size: 1.8rem;
+    line-height: 144%;
+  }
+  .center-slide figure figure img {
+    border-radius: 1.2rem;
+  }
+  #slick-slide00 figure figure {
+    width: 20.29rem;
+    height: 15.2rem;
+  }
+  #slick-slide00 figure figure img {
+    width: 100%;
+  }
+  #slick-slide01 figure figure {
+    width: 15.2rem;
+    height: 15.2rem;
+  }
+  #slick-slide01 figure figure img {
+    width: 100%;
+  }
+  #slick-slide03 figure figure,
+  #slick-slide04 figure figure {
+    width: 20rem;
+    height: 28.2rem;
+  }
+  #slick-slide03 figure figure img,
+  #slick-slide04 figure figure img {
+    width: 100%;
+  }
+  .slick-current#slick-slide00 {
+    scale: 1.34;
+  }
+  .slick-current#slick-slide01 {
+    margin-left: 8rem;
+    scale: 1.5;
+  }
+  .center-quote-dark {
+    border-radius: 1.2rem;
+    width: 20rem;
+    height: 28.2rem;
+    padding: 1.5rem;
+  }
+  .center-quote-dark p {
+    padding: 0;
+    margin: 6rem 0 2.89rem 0;
+    font-size: 1.6rem;
+    line-height: 130%;
+  }
+  .center-quote-dark blockquote {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .center-quote-dark blockquote p {
+    font-size: 1.6rem;
+    padding-left: 3.5rem;
+    margin: 0;
+    margin-top: 2rem;
+    line-height: normal;
+  }
+  .center-quote-light {
+    border-radius: 1.2rem;
+    width: 20rem;
+    height: 28.2rem;
+    padding: 1.5rem;
+  }
+  .center-quote-light p {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 150%;
+    width: 100%;
+  }
+  .center-quote-light blockquote {
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .center-quote-light blockquote p {
+    margin: 0;
+    font-size: 1.8rem;
+    padding-left: 1.6rem;
+    line-height: 130%;
+  }
+  .slick-current#slick-slide02,
+  .slick-current#slick-slide05 {
+    scale: 1.2;
+    margin-left: 8rem;
+  }
+  .slick-current#slick-slide03,
+  .slick-current#slick-slide04 {
+    margin-left: 8rem;
+  }
+  .slick-slide {
+    margin: 0 0.9rem;
+  }
+  .slick-track {
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+  }
+  .center {
+    padding-bottom: 0;
+  }
+  .map {
+    padding-bottom: 7rem;
+  }
+  .slick-next {
+    top: 115%;
+    right: 25%;
+  }
+  .slick-prev {
+    left: auto;
+    top: 115%;
+    left: 25%;
+  }
+  .slick-dots {
+    width: 26rem;
+  }
+  .slick-dots li {
+    width: 4.33rem;
+  }
+  .slick-dots li button {
+    width: 4.33rem;
+  }
+  .slick-dots li button::before {
+    width: 4.33rem;
+  }
+  .hosts {
+    position: relative;
+    margin-bottom: 67.37rem;
+  }
+  .hosts h2 {
+    font-size: 2.8rem;
+    line-height: normal;
+    letter-spacing: 0.252rem;
+    padding: 6rem 0 6.81rem;
+  }
+  .hosts .hosts-content {
+    flex-wrap: wrap;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+  }
+  .hosts .hosts-content figure {
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 0;
+    width: 100%;
+  }
+  .hosts .hosts-content figure img {
+    width: 28rem;
+  }
+  .hosts .hosts-content .about-text {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hosts .hosts-content .about-text p {
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 144%;
+  }
+  .hosts .hosts-content .about-text .more-hosts {
+    position: absolute;
+    top: 90%;
+    margin: 0;
+    padding: 0;
+  }
+  .hosts .hosts-content .about-text .more-hosts a {
+    margin: 0;
+    display: flex;
+    width: 24rem;
+    line-height: normal;
+    padding: 1.5rem 2.3rem;
+  }
+  .hosts .hosts-content .about-text .more-hosts .hosts-shadow {
+    width: 27rem;
+    height: 5.9rem;
+  }
+  .revival-block {
+    margin-bottom: 115.13rem;
+  }
+  .revival-block h2 {
+    font-size: 4.4rem;
+    line-height: normal;
+    letter-spacing: 0.396rem;
+    margin-top: 10.72rem;
+    margin-bottom: 2rem;
+  }
+  .revival-block .about-text {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: none;
+    bottom: -27rem;
+    left: 0;
+  }
+  .revival-block .about-text p {
+    padding: 0 1.5rem;
+    font-size: 1.8rem;
+    line-height: 144%;
+  }
+  .revival-block .gallery-block {
+    bottom: -105.2rem;
+    display: flex;
+  }
+  .revival-block .gallery-block .participants {
+    padding: 0 1.5rem;
+    min-width: auto;
+  }
+  .revival-block .gallery-block .participants .participants_item figure {
+    position: relative;
+  }
+  .revival-block .gallery-block .participants .participants_item figure img {
+    min-width: 13.5rem;
+  }
+  .revival-block .gallery-block .participants .participants_item .hide {
+    display: block;
+    padding: 1.2rem 0 0 4rem;
+  }
+  .revival-block .gallery-block .participants .participants_item .info {
+    padding: 1.2rem 0 0 0;
+    grid-column: 1/3;
+  }
+  .revival-block .gallery-block .participants .participants_item .info h4 {
+    display: none;
+  }
+  .revival-block .gallery-block .participants .participants_item .info p {
+    padding: 0;
+    font-size: 1.6rem;
+    opacity: 0.5;
+    line-height: 160%;
+    margin-top: 2rem;
+  }
+  .page-color {
+    background: linear-gradient(180deg, #93A480 56%, #F8F7F3 56%), #F8F7F3;
   }
 }
 .revival_navbar {
