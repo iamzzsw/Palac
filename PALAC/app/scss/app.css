@@ -670,10 +670,12 @@ h5, .h5 {
   background-color: #93A480;
   position: relative;
 }
+.layout-footer .container p {
+  padding: 0;
+}
 
 .layout-footer__base {
-  padding-top: 2rem;
-  height: 5.8rem;
+  padding: 4rem 4.8rem;
 }
 
 .layout-footer__row {
@@ -683,18 +685,9 @@ h5, .h5 {
   justify-content: space-between;
   align-items: center;
   max-width: 134.4rem;
-  padding: 0 1.5rem;
   margin: auto;
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
-}
-
-.layout-footer__cell {
-  display: flex;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  align-items: center;
-  align-content: center;
 }
 
 .copyright {
@@ -738,69 +731,40 @@ h5, .h5 {
     content: "flickity";
     display: none;
   }
-  .list-payments {
-    flex-wrap: nowrap;
-    margin: 0 -4rem;
-  }
-  .list-payments__item {
-    margin-bottom: 0;
-    width: auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .layout-footer .container p {
+    font-size: 1.4rem;
+    letter-spacing: 0.042rem;
   }
   .list-payments__logo {
     max-width: inherit;
   }
-  .layout-footer__info::after {
-    display: none;
+  .layout-footer__base {
+    padding: 4rem 2rem;
   }
-  .layout-footer__info .layout-footer__row {
-    flex-direction: column-reverse;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .layout-footer__info .layout-footer__cell {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .layout-footer__info .layout-footer__cell + .layout-footer__cell:after {
-    content: "";
-    height: 4px;
-    background-color: #fff;
-    display: block;
-    margin: 2rem 0;
+  .developer a {
+    font-size: 1.4rem;
+    letter-spacing: 0.042rem;
   }
 }
 @media (max-width: 767px) {
-  .layout-footer {
-    padding-bottom: 4rem;
-  }
-  .layout-footer__base,
-  .layout-footer__info {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  .layout-footer__base {
+    padding: 4rem 1.6rem;
   }
   .layout-footer__base .layout-footer__row {
     flex-direction: column;
+    margin: 0;
   }
   .layout-footer__base .layout-footer__cell {
     text-align: center;
   }
-  .layout-footer__base .layout-footer__cell + .layout-footer__cell {
-    margin-top: 2rem;
-  }
-  .list-payments {
-    margin: 0 -1.5rem;
-  }
-  .list-payments__item {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  .layout-footer__text {
-    font-size: 1.4rem;
+  .layout-footer .container p {
+    font-size: 1.2rem;
   }
   .developer {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .developer a {
     font-size: 1.2rem;
     justify-content: center;
   }
@@ -1677,7 +1641,7 @@ input[type=submit]:hover {
   color: rgba(0, 0, 0, 0.15);
   margin: 0;
   text-align: center;
-  font-size: 18rem;
+  font-size: 11.1vw;
   font-family: "Oranienbaum", serif;
   font-style: normal;
   font-weight: 400;
@@ -1685,10 +1649,12 @@ input[type=submit]:hover {
   text-transform: uppercase;
   position: relative;
   margin-top: 17rem;
+  text-align: center;
+  padding-left: 3.6rem;
 }
 .section-welcome h1 {
   position: relative;
-  font-size: 12rem;
+  font-size: 7.4vw;
   letter-spacing: 1.08rem;
   padding: 0;
   margin-bottom: 9.6rem;
@@ -1851,7 +1817,7 @@ input[type=submit]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 73.3rem;
+  margin-bottom: 63.3rem;
 }
 .revival-block h2 {
   padding-top: 20rem;
@@ -1925,6 +1891,14 @@ input[type=submit]:hover {
   left: 0;
 }
 
+@media (min-width: 1680px) {
+  .section-welcome .recover {
+    font-size: 18rem;
+  }
+  .section-welcome h1 {
+    font-size: 12rem;
+  }
+}
 @media (max-width: 1023px) {
   .section-welcome figure {
     left: auto;
