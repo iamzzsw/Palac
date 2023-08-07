@@ -1,0 +1,31 @@
+extends ../layout/layout-default
+
+block vars
+  - var bodyClass = 'page-noise';
+
+block head
+  - var pageTitle = 'Палац і гаспадары';
+
+block content
+    .gallery_wrapper
+        .palac_navbar
+            include ../blocks/navbar
+        h1 Нараўлянскі палац і яго гаспадары
+        p Пабудаваны ў мястэчку Нароўля ў Беларусі ў 1850 годзе, на высокім беразе ракі Прыпяць. Улучаў у сябе парк, капліцу і шэраг малых архітэктурных форм, якія часткова захаваліся і да сёння.
+        p Гісторыя зрабіла кола і працягнула падарожжа, якое пачалося ў канцы ХІХ стагоддзя Даніэлем Горваттам і яго жонкай Іфігеніяй Ратынскай, а сёння падхопленае пісьменнікам Андрэем Горватам і паплечнікамі.
+        .images_grid 
+            figure.grid_1.grid 
+                figcaption.year 1816
+                figcaption.description Першыя згадкі пра набыццё зямлі Горваттамі
+                img(src="../../gallery_1.png")
+            figure.grid_2.grid  
+                figcaption.year 1816
+                figcaption.description Першыя згадкі пра набыццё зямлі Горваттамі
+                img(src="../../gallery_2.png")
+            .grid_3.grid 
+                .center-quote-dark.light
+                    p Надпіс на сцяне Блакітнага салону палаца Горваттаў у Нароўлі
+                    blockquote 
+                        p Дзіўна, што пад тваімі стопамі не растуць кветкі.
+                        p Ты рай, ты май, ты вясна... 
+ 

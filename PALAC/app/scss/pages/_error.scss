@@ -1,6 +1,7 @@
 .page-noise {
     background: linear-gradient(180deg, $bg-default 60%, $bg-light 60%), $bg-light;
     background-repeat: no-repeat;
+    height: 100vh;
     &::before {
 		position: fixed;
 		top: 0;

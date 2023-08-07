@@ -16,6 +16,7 @@
                 color: $text-white;
                 text-decoration: none;
                 transition: all .3s;
+                cursor: pointer;
                 &:hover {
                     color: $text-hover;
                 }
